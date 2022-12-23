@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <p>Pagina de luca</p>
+      <p className="text-2xl font-medium text-blue-500">Pagina de luca</p>
     </>
   );
 }

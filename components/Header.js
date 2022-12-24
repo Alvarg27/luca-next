@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-full h-[60px] flex justify-center items-center absolute z-[2]">
+    <div className="w-full h-[90px] flex justify-center items-center absolute z-[2]">
       <Image
         src="/lucalogo.webp"
         height={100}

@@ -16,9 +16,10 @@ const Navigation = () => {
 
   return (
     <div className="flex flex-wrap justify-center my-20">
-      {lista.map((viñeta) => (
+      {lista.map((item, i) => (
         <NavigationCard
-          label={viñeta}
+          key={i}
+          label={item}
           selected={selected}
           setSelected={setSelected}
         />

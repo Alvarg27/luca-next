@@ -1,7 +1,11 @@
+import Inicio from "../components/Inicio";
+import Navegation from "../components/Navigation";
+
 export default function Home() {
   return (
     <>
-      <p className="text-2xl font-medium text-blue-500">Pagina de luca</p>
+      <Inicio />
+      <Navegation />
     </>
   );
 }

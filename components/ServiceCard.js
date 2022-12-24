@@ -11,8 +11,8 @@ const ServiceCard = () => {
         Top golf
       </p>
       <div className="my-8 flex overflow-auto">
-        {service.images.map((image) => (
-          <ServiceImage image={image} />
+        {service.images.map((image, i) => (
+          <ServiceImage key={i} image={image} />
         ))}
       </div>
     </div>

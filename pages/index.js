@@ -26,7 +26,7 @@ export default function Home() {
           <Header />
           <div
             style={{ height: startHeight }}
-            className="bg-[#DDD8CD] top-0 relative flex flex-col justify-center overflow-hidden"
+            className="bg-gray-100 top-0 relative flex flex-col justify-center overflow-hidden"
           >
             <Circles />
             <Navigation />

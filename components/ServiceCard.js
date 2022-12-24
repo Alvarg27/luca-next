@@ -1,21 +1,25 @@
 import React from "react";
-import ServiceImage from "./ServiceImage";
 
-const ServiceCard = () => {
-  const service = {
-    images: ["/top-golf/1.webp", "/top-golf/2.webp", "/top-golf/3.webp"],
-  };
+const ServiceCard = ({ service, index }) => {
+  let style = "";
+  const arr1 = [0, 3, 6, 9];
+  const arr2 = [1, 4, 7, 10];
+  const arr3 = [2, 5, 8, 11];
+  if (arr1.some((x) => x === index)) {
+    style = "bg-neutral-900 text-[#DDD8CD]";
+  }
+  if (arr2.some((x) => x === index)) {
+    style = " bg-teal-500";
+  }
+  if (arr3.some((x) => x === index)) {
+    style = "bg-[#DDD8CD]";
+  }
   return (
-    <div className="w-full flex flex-col">
-      <p className="text-white font-monument text-xl w-[90%] mx-auto">
-        Top golf
-      </p>
-      <div className="my-8 flex overflow-auto">
-        {service.images.map((image, i) => (
-          <ServiceImage key={i} image={image} />
-        ))}
-      </div>
-    </div>
+    <p
+      className={`px-4 m-1 py-2 border-[2px]  border-neutral-900 rounded-full flex items-center font-monument shadow-md text-sm ${style}`}
+    >
+      {service.label}
+    </p>
   );
 };
 

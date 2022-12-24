@@ -4,7 +4,8 @@ import Header from "../components/Header";
 import InfoCard from "../components/Mision";
 
 import Navigation from "../components/Navigation";
-import ServiceCard from "../components/ServiceCard";
+import ServiceCard from "../components/Experience";
+import Services from "../components/Services";
 import Vision from "../components/Vision";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
@@ -41,8 +42,13 @@ export default function Home() {
             <InfoCard />
             <div className="h-[100px] w-full" />
             <Vision />
-            <div className="h-[100px] w-full" />
+            <div className="h-[50px] w-full" />
+            <div className="bg-[#DDD8CD] w-full relative h-screen flex flex-col justify-center  z-[2] items-center">
+              <Services />
+            </div>
+            <div className="h-[50px] w-full" />
             <ServiceCard />
+            <div className="h-[100px] w-full" />
           </div>
         </div>
       )}

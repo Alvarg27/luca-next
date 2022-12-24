@@ -22,6 +22,7 @@ const Navigation = () => {
           label={item}
           selected={selected}
           setSelected={setSelected}
+          animationDelay={1700}
         />
       ))}
     </div>

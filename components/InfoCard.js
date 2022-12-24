@@ -12,17 +12,17 @@ const InfoCard = () => {
       </div>
       <div>
         <div className="flex">
-          <div className="mr-1 flex-1 bg-[#DDD8CD] rounded-2xl p-4 h-[120px]  flex flex-col justiDDD8CD">
+          <div className="mr-1 flex-1 bg-[#DDD8CD] rounded-2xl p-4 h-[120px]  flex flex-col justify-end">
             <p className="font-alga">La mejor calidad en nuestros productos.</p>
           </div>
           <div
             className="ml-1 flex-1 bg-[#DDD8CD]
-           rounded-2xl p-4 h-[120px]  flex flex-col justiDDD8CD"
+           rounded-2xl p-4 h-[120px]  flex flex-col justify-end"
           >
             <p className="font-alga">Desarrollando ideas innovadoras.</p>
           </div>
         </div>
-        <div className="mt-2 flex-1 bg-[#DDD8CD] rounded-2xl p-4 h-[120px] flex flex-col justiDDD8CD">
+        <div className="mt-2 flex-1 bg-[#DDD8CD] rounded-2xl p-4 h-[120px] flex flex-col justify-end">
           <p className="font-alga">La mejor calidad en nuestros productos.</p>
         </div>
       </div>

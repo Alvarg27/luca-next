@@ -12,11 +12,11 @@ const ServiceCard = ({ service, index }) => {
     style = " bg-teal-500";
   }
   if (arr3.some((x) => x === index)) {
-    style = "bg-[#DDD8CD]";
+    style = "bg-white bg-opacity-50";
   }
   return (
     <p
-      className={`px-4 m-1 py-2 border-[2px]  border-neutral-900 rounded-full flex items-center font-monument shadow-md text-sm ${style}`}
+      className={`px-4 m-1 py-2 rounded-full flex items-center  font-medium shadow-md text-sm ${style}`}
     >
       {service.label}
     </p>

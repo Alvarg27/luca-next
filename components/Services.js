@@ -19,7 +19,13 @@ const Services = () => {
   return (
     <>
       <p className="text-3xl font-monument">Servicios</p>
-      <div className="flex flex-wrap w-full justify-center mt-4">
+      <p className="text-sm text-center w-[80%] font-alga">
+        En LUCA nos encargamos de que cada experiencia que se le brinda al
+        cliente sea de la más alta calidad ofrenciendole una amplia gama de
+        opciones para que encuentre las más adecuada a sus necesidades
+      </p>
+
+      <div className="flex flex-wrap w-full justify-center mt-4 max-w-[400px]">
         {list.map((service, i) => (
           <ServiceCard key={i} index={i} service={service} />
         ))}

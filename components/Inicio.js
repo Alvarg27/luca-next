@@ -6,7 +6,7 @@ import SmallCircle from "./SmallCircle";
 
 const Inicio = () => {
   return (
-    <div className="flex justify-center relative mt-[200px]">
+    <div className="flex justify-center relative mt-[200px] z-[10]">
       <div className="h-[100px] w-[100px] bg-teal-400 rounded-full "></div>
       <div className="absolute w-full h-full animate-spin-slow">
         <SmallCircle className="w-[130%] lg:w-[60%] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" />

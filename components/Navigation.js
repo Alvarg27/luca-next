@@ -15,7 +15,7 @@ const Navigation = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center my-20">
+    <div className="flex flex-wrap justify-center mt-20 relative z-[11]">
       {lista.map((item, i) => (
         <NavigationCard
           key={i}

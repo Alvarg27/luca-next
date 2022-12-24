@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        alga: ["alga"],
+        monument: ["monument"],
+      },
       animation: {
         "spin-slow": "spin 20s linear infinite",
       },

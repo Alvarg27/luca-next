@@ -12,26 +12,17 @@ const InfoCard = () => {
       </div>
       <div>
         <div className="flex">
-          <div className="mr-1 flex-1 bg-blue-400 rounded-2xl p-4 h-[120px]  flex flex-col justify-between">
-            <div className="h-[30px] w-[30px] bg-white flex rounded-full items-center justify-center font-monument">
-              1
-            </div>
+          <div className="mr-1 flex-1 bg-[#DDD8CD] rounded-2xl p-4 h-[120px]  flex flex-col justiDDD8CD">
             <p className="font-alga">La mejor calidad en nuestros productos.</p>
           </div>
           <div
-            className="ml-1 flex-1 bg-indigo-400
-           rounded-2xl p-4 h-[120px]  flex flex-col justify-between"
+            className="ml-1 flex-1 bg-[#DDD8CD]
+           rounded-2xl p-4 h-[120px]  flex flex-col justiDDD8CD"
           >
-            <div className="h-[30px] w-[30px] bg-white flex rounded-full items-center justify-center font-monument">
-              2
-            </div>
             <p className="font-alga">Desarrollando ideas innovadoras.</p>
           </div>
         </div>
-        <div className="mt-2 flex-1 bg-amber-400 rounded-2xl p-4 h-[120px] flex flex-col justify-between">
-          <div className="h-[30px] w-[30px] bg-white flex rounded-full items-center justify-center font-monument">
-            3
-          </div>
+        <div className="mt-2 flex-1 bg-[#DDD8CD] rounded-2xl p-4 h-[120px] flex flex-col justiDDD8CD">
           <p className="font-alga">La mejor calidad en nuestros productos.</p>
         </div>
       </div>

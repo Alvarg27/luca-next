@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Circles from "../components/Circles";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
@@ -7,12 +8,13 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function Home() {
   const { height } = useWindowDimensions();
+  const [startHeight, setStartHeight] = useState(height);
   return (
     <div className="relative w-full min-h-screen">
       <Header />
       <div
-        style={{ height, transition: "0.5s" }}
-        className="bg-gray-100 top-0 relative flex flex-col justify-center overflow-hidden"
+        style={{ height: startHeight }}
+        className="bg-[#DDD8CD] top-0 relative flex flex-col justify-center overflow-hidden"
       >
         <Circles />
         <Navigation />
@@ -20,11 +22,7 @@ export default function Home() {
           Powered <b>tectify</b>
         </p>
       </div>
-      <div
-        style={{ height, transition: "0.5s" }}
-        className="bg-black top-0 relative  flex flex-col justify-center overflow-hidden z-[2] items-center"
-      >
-        <p></p>
+      <div className="bg-black top-0 h-screen relative  flex flex-col justify-center overflow-hidden z-[2] items-center">
         <InfoCard />
       </div>
     </div>

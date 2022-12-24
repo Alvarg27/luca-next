@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import InfoCard from "../components/Mision";
 
 import Navigation from "../components/Navigation";
+import ServiceCard from "../components/ServiceCard";
 import Vision from "../components/Vision";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
@@ -40,6 +41,8 @@ export default function Home() {
             <InfoCard />
             <div className="h-[100px] w-full" />
             <Vision />
+            <div className="h-[100px] w-full" />
+            <ServiceCard />
           </div>
         </div>
       )}

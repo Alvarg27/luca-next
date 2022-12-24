@@ -3,10 +3,22 @@ import { useSpring, animated, config } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import { useRouter } from "next/router";
 import { Fragment, useEffect, useRef, useState } from "react";
+import { RiCloseLine } from "react-icons/ri";
 
 import useWindowDimensions from "../hooks/useWindowDimensions";
+import NavigationCard from "./NavigationCard";
+
+const lista = [
+  "Inicio",
+  "Misión",
+  "Visión",
+  "Experiencias",
+  "Lucas es",
+  "Redes sociales",
+];
 
 const Menu = ({ isOpen, setIsOpen }) => {
+  const [selected, setSelected] = useState("Inicio");
   const router = useRouter();
 
   const ref = useRef(null);
@@ -119,26 +131,35 @@ const Menu = ({ isOpen, setIsOpen }) => {
         >
           <div
             onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-black bg-opacity-30 "
+            className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-md"
           />
         </Transition.Child>
 
-        <div className="fixed min-h-[209px]  w-full -bottom-[50px] ">
+        <div style={{ height }} className="fixed  w-full -bottom-[50px] ">
           <Dialog.Panel className="h-full w-full absolute">
             <animated.div
-              className="h-full w-full rounded-t-2xl  bg-white bg-opacity-70 backdrop-blur-xl text-left shadow-xl  flex flex-col relative pb-[50px] touch-none"
+              {...bind()}
+              className="h-full w-full rounded-t-2xl text-left shadow-xl  flex flex-col justify-between relative touch-none"
               style={{ y }}
             >
-              <div {...bind()} className="text-blue-500">
-                <p className="text-center font-medium text-lg py-3 border-b-[1px] border-gray-400">
-                  Inicio
-                </p>
-                <p className="text-center font-medium text-lg py-3 border-b-[1px] border-gray-400">
-                  Misión
-                </p>
-                <p className="text-center font-medium text-lg py-3 border-b-[1px] border-gray-400">
-                  Visión
-                </p>
+              <div className="absolute bottom-[100px] flex flex-col items-center justify-center">
+                <div
+                  onClick={() => setIsOpen(false)}
+                  className="border-[1px] w-[50px] h-[50px] rounded-full flex items-center justify-center text-2xl text-white opacity-75 mb-10 cursor-pointer"
+                >
+                  <RiCloseLine />
+                </div>
+                <div className="flex flex-wrap justify-center">
+                  {lista.map((item, i) => (
+                    <NavigationCard
+                      key={i}
+                      index={i}
+                      label={item}
+                      selected={selected}
+                      setSelected={setSelected}
+                    />
+                  ))}
+                </div>
               </div>
             </animated.div>
           </Dialog.Panel>

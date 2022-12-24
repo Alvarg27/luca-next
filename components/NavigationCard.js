@@ -2,11 +2,19 @@ import { useSpring, animated } from "@react-spring/web";
 import React, { useEffect, useRef, useState } from "react";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
-const NavigationCard = ({ label, selected, setSelected, index }) => {
+const NavigationCard = ({
+  label,
+  selected,
+  setSelected,
+  index,
+  animationDelay,
+}) => {
   const { height } = useWindowDimensions();
   const [isHovered, setIsHovered] = useState(false);
   const isSelected = selected === label;
   const cardRef = useRef(null);
+
+  const delay = animationDelay ? animated : 0;
 
   const [{ y, scale, opacity }, api] = useSpring(() => ({
     y: 20,
@@ -20,7 +28,7 @@ const NavigationCard = ({ label, selected, setSelected, index }) => {
       scale: 1,
       immediate: false,
       config: { tension: 280, friction: 18 },
-      delay: 1700 + index * 50,
+      delay: delay + index * 50,
     });
 
     return () => {

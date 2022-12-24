@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import Circles from "../components/Circles";
 import Header from "../components/Header";
-import InfoCard from "../components/InfoCard";
+import InfoCard from "../components/Mision";
 
 import Navigation from "../components/Navigation";
+import Vision from "../components/Vision";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
           <Header />
           <div
             style={{ height: startHeight }}
-            className="bg-gray-100 top-0 relative flex flex-col justify-center overflow-hidden"
+            className="bg-[#DDD8CD] top-0 relative flex flex-col justify-center overflow-hidden"
           >
             <Circles />
             <Navigation />
@@ -34,8 +35,11 @@ export default function Home() {
               Powered <b>tectify</b>
             </p>
           </div>
-          <div className="bg-black top-0 h-screen relative  flex flex-col justify-center overflow-hidden z-[2] items-center">
+          <div className="bg-black top-0 relative  flex flex-col justify-center overflow-hidden z-[2] items-center">
+            <div className="h-[50px] w-full" />
             <InfoCard />
+            <div className="h-[100px] w-full" />
+            <Vision />
           </div>
         </div>
       )}

@@ -5,11 +5,11 @@ import {
   RiTimeLine,
   RiTimer2Line,
 } from "react-icons/ri";
-const InfoCard = () => {
+const Mision = () => {
   return (
     <div className="w-[90%] text-lg">
       <div className="w-full bg-teal-400 rounded-2xl p-8 my-2">
-        <p className="text-xl font-monument">Missión</p>
+        <p className="text-xl font-monument">Misión</p>
         <p className="font-alga">
           Nuestra misión en LUCA es brindarle a nuestros clientes un servicio
           excepcional <b>mediante:</b>
@@ -51,4 +51,4 @@ const InfoCard = () => {
   );
 };
 
-export default InfoCard;
+export default Mision;

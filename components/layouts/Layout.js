@@ -16,8 +16,10 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/luca-icon.png" />
       </Head>
       <Header />
-      {children}
-      <Footer />
+      <div className=" min-h-screen flex flex-col justify-between">
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 };

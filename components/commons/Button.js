@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-const Button = ({ children, className, style }) => {
+const Button = ({ children, className, style, onClick }) => {
   const [isHovered, setIsHovered] = useState();
   return (
     <button
+      onClick={onClick}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
       style={style}

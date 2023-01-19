@@ -58,7 +58,7 @@ const ClientsSection = () => {
   };
 
   return (
-    <section className="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row mt-20 relative ">
+    <section className="w-[95%] max-w-[1200px] mx-auto flex flex-col lg:flex-row mt-20 relative ">
       <div className="lg:w-1/2 w-full flex items-center relative ">
         <div className="w-2/3 lg:mx-0 mx-auto lg:text-left text-center mb-8 lg:mb-0">
           <h2 className="md:text-4xl text-3xl font-semibold font-monument">

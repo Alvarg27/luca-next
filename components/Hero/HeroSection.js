@@ -1,10 +1,11 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../commons/Button";
 import heroImage from "../../public/hero.webp";
 import Circles from "../commons/Circles";
 
 const HeroSection = () => {
+  const [imageIsLoaded, setImageIsLoaded] = useState(false);
   return (
     <section className="min-h-screen w-full flex justify-center items-center  relative ">
       <div className="max-w-[1200px] w-[95%] relative z-[1] flex-col md:flex-row flex md:mt-[0px]  mt-[120px]">
@@ -36,8 +37,11 @@ const HeroSection = () => {
           </div>
           <div className="md:h-[500px] w-full overflow-hidden rounded-2xl my-10">
             <Image
+              onLoadingComplete={() => setImageIsLoaded(true)}
               src={heroImage}
-              className=" h-full w-full rounded-2xl shadow-xl relative object-cover overflow-hidden lg:hover:scale-110 transition duration-500 bg-gray-100"
+              className={`h-full w-full rounded-2xl shadow-xl relative object-cover overflow-hidden lg:hover:scale-110 transition duration-500 bg-gray-100 ${
+                imageIsLoaded ? "opacity-100" : "opacity-0"
+              }`}
             />
           </div>
         </div>

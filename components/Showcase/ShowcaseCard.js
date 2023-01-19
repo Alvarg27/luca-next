@@ -1,5 +1,6 @@
 import trimString from "@/helpers/trimString";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { RiArrowRightLine } from "react-icons/ri";
 
@@ -12,6 +13,8 @@ function isOdd(n) {
 }
 
 const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
+  const router = useRouter();
+  const [imageIsLoaded, setImageIsLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHeight = () => {
@@ -48,20 +51,22 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
   return (
     <div className="w-full p-1">
       <div
+        onClick={() => router.push(`/${item.permalink}`)}
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
         style={{ height: handleHeight(), transition: "0.3s" }}
         className="  rounded-2xl shadow-xl relative bg-gray-100 overflow-hidden cursor-pointer"
       >
-        <div className="bg-gradient-to-t h-3/4 w-full from-black via-black opacity-70  absolute bottom-0 z-[1] rounded-2xl" />
+        <div className="bg-gradient-to-t h-3/4 w-full from-black via-black opacity-70  absolute bottom-0 z-[2] rounded-2xl " />
         <Image
+          onLoadingComplete={() => setImageIsLoaded(true)}
           fill
           src={item.image}
-          className={`object-cover rounded-2xl transition duration-300 ${
+          className={`object-cover rounded-2xl transition duration-300 relative z-[1] ${
             isHovered ? "md:scale-110" : ""
-          }`}
+          } ${imageIsLoaded ? "opacity-100" : "opacity-0"}`}
         />
-
+        <div className="bg-gray-200 w-full h-full absolute rounded-2xl animate-pulse" />
         <div className=" absolute h-full flex flex-col justify-end z-[3] p-6  w-full">
           <p className="font-medium text-lg text-white font-monument">
             {item.title}

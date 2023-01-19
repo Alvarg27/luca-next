@@ -34,7 +34,7 @@ const ServicePage = () => {
       <div className="w-full flex flex-col md:flex-row">
         <div className="h-[300px] md:h-[400px] w-full rounded-2xl relative md:w-1/2 ">
           <Image
-            onLoadingComplete={() => setImageIsLoaded(true)}
+            onLoad={() => setImageIsLoaded(true)}
             src={service?.image}
             fill
             className={`object-cover rounded-2xl z-[2] transition duration-300 ${

@@ -1,4 +1,5 @@
 import trimString from "@/helpers/trimString";
+import usePageOffset from "@/hooks/usePageOffset";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -14,6 +15,7 @@ function isOdd(n) {
 
 const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
   const router = useRouter();
+  const { offsetY } = usePageOffset();
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -51,7 +53,7 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
   return (
     <div className="w-full p-1">
       <div
-        onClick={() => router.push(`/${item.permalink}`)}
+        onClick={() => router.push(`/${item.permalink}?prevscroll=${offsetY}`)}
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
         style={{ height: handleHeight(), transition: "0.3s" }}

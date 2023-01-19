@@ -45,7 +45,7 @@ const ServicePage = () => {
           )}
           <div className="w-full h-full rounded-2xl bg-gray-200 animate-pulse" />
           <div
-            onClick={() => router.push("/")}
+            onClick={() => router.push(`/?scroll=${router.query.prevscroll}`)}
             className="z-[3] w-[45px] h-[45px] cursor-pointer rounded-full absolute top-2 left-2 text-xl flex items-center justify-center shadow-md text-gray-500 bg-gray-200"
           >
             <RiArrowLeftLine />

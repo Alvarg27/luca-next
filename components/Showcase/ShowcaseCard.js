@@ -12,6 +12,8 @@ function isOdd(n) {
 }
 
 const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleHeight = () => {
     let colHeight = maxLength * 300;
 
@@ -46,15 +48,27 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
   return (
     <div className="w-full p-1">
       <div
+        onMouseOver={() => setIsHovered(true)}
+        onMouseOut={() => setIsHovered(false)}
         style={{ height: handleHeight(), transition: "0.3s" }}
-        className="  rounded-2xl shadow-xl relative bg-gray-100 overflow-hidden"
+        className="  rounded-2xl shadow-xl relative bg-gray-100 overflow-hidden cursor-pointer"
       >
         <div className="bg-gradient-to-t h-3/4 w-full from-black via-black opacity-70  absolute bottom-0 z-[1] rounded-2xl" />
-        <Image fill src={item.image} className="object-cover rounded-2xl" />
+        <Image
+          fill
+          src={item.image}
+          className={`object-cover rounded-2xl transition duration-300 ${
+            isHovered ? "md:scale-110" : ""
+          }`}
+        />
 
         <div className=" absolute h-full flex flex-col justify-end z-[3] p-6  w-full">
-          <p className="font-medium text-2xl text-white">{item.title}</p>
-          <p className=" text-gray-300">{trimString(item.description, 50)}</p>
+          <p className="font-medium text-lg text-white font-monument">
+            {item.title}
+          </p>
+          <p className=" text-gray-300 font-alga">
+            {trimString(item.description, 50)}
+          </p>
           <button className="flex items-center text-blue-500 mt-1 hover:underline">
             <p className="-mt-[1px]">Ver más</p>
             <RiArrowRightLine />

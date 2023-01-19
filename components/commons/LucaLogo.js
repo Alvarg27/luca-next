@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import React from "react";
 
 const LucaLogo = ({ color }) => {
+  const router = useRouter();
   return (
-    <div>
+    <div onClick={() => router.push("/")} className="cursor-pointer">
       <div className="flex items-center">
         <p
           className={`text-3xl font-monument duration-300 transition ${

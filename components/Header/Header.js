@@ -13,7 +13,9 @@ const Header = () => {
       <div
         style={{ height: offsetY > 35 ? 70 : 0, transition: "0.2s" }}
         className={`absolute top-0 w-full ${
-          offsetY > 35 ? "bg-white shadow-lg" : "bg-transparent"
+          offsetY > 35
+            ? "bg-gradient-to-b from-stone-100 to-white shadow-lg"
+            : "bg-transparent"
         }`}
       />
       <div className="flex justify-between max-w-[1200px] w-[95%] h-full items-center mx-auto relative">

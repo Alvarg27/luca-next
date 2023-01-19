@@ -205,7 +205,20 @@ const ShowcaseSection = () => {
   };
 
   return (
-    <section className="w-full max-w-[1200px] mx-auto my-24">
+    <section className="w-full max-w-[1200px] mx-auto mt-24 mb-10">
+      <div className="text-center mb-10">
+        <h2 className="font-semibold md:text-4xl text-3xl font-monument">
+          We make{" "}
+          <b className="text-teal-500 font-alga text-5xl">experiences</b>{" "}
+          {`you'll never forget`}
+        </h2>
+        <p className="font-alga text-xl text-gray-600 my-4">
+          Nos dedicamos a crear experiencias inolvidables para empresas.
+          Brindando a nuestros clientes las mejores opciones para satisfacer sus
+          necesidades en viajes, eventos, conferencias y más. Con el objetivo de
+          llevarlos al siguiente nivel.
+        </p>
+      </div>
       <div className="flex w-full">
         {handleColumns().map((column, colIndex) => (
           <div

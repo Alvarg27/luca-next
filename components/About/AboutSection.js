@@ -4,7 +4,7 @@ import aboutImage from "../../public/about.webp";
 
 const AboutSection = () => {
   return (
-    <section className="w-[95%] max-w-[1200px] mx-auto my-8 flex relative flex-col md:flex-row  from-stone-100 bg-gradient-to-t via-stone-100">
+    <section className="w-[95%] max-w-[1200px] mx-auto  mt-32  lg:mt-8 lg:mb-8 flex relative flex-col md:flex-row  from-stone-100 bg-gradient-to-t via-stone-100">
       <Image
         src={aboutImage}
         className="md:h-[400px] h-[250px] object-cover w-full md:w-1/3 rounded-2xl shadow-xl relative"

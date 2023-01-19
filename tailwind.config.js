@@ -13,6 +13,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 70s linear infinite",
       },
+      animation: {
+        "spin-slow-mobile": "spin 40s linear infinite",
+      },
     },
   },
   plugins: [],

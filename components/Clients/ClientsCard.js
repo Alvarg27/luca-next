@@ -14,9 +14,9 @@ const ClientsCard = ({ client, index, colIndex }) => {
     }
 
     if (colIndex === 0 && index === 0) {
-      return 120;
+      return 100;
     }
-    return 80;
+    return 60;
   };
 
   return (
@@ -26,7 +26,9 @@ const ClientsCard = ({ client, index, colIndex }) => {
         height: handleSize(),
         width: handleSize(),
       }}
-      className="relative md:p-6 p-4 shadow-xl  m-1 rounded-2xl bg-white"
+      className={`relative  shadow-xl  m-1 rounded-2xl bg-white ${
+        colIndex === 0 && index === 0 ? "p-5" : "p-3"
+      }`}
     >
       <div className="relative h-full w-full">
         <Image fill src={client.image} className="object-contain" />

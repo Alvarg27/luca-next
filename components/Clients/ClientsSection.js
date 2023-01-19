@@ -62,7 +62,11 @@ const ClientsSection = () => {
       <div className="lg:w-1/2 w-full flex items-center relative ">
         <div className="w-2/3 lg:mx-0 mx-auto lg:text-left text-center mb-8 lg:mb-0">
           <h2 className="md:text-4xl text-3xl font-semibold font-monument">
-            El éxito de nuestros clientes es el nuestro.
+            Nuestros{" "}
+            <b className="font-alga text-teal-500 md:text-5xl text-4xl">
+              clientes
+            </b>
+            .
           </h2>
           <p className="my-4 text-gray-500 font-alga">
             En Luca, nos esforzamos por brindar el mejor servicio posible a

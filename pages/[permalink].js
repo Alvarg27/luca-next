@@ -49,7 +49,7 @@ const ServicePage = () => {
             <RiArrowLeftLine />
           </div>
         </div>
-        <div className="w-full md:w-1/2 px-6 flex flex-col justify-center">
+        <div className="w-full md:w-1/2 md:px-6 lg:mt-0 mt-6 flex flex-col justify-center">
           <p className="text-4xl font-monument">{service?.title}</p>
           <div>
             <div className="flex items-center my-2">
@@ -89,7 +89,7 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="md:mt-10 mt-4">
         <p className="text-2xl font-monument">Descripción</p>
         <p className="font-alga text-gray-500">{service?.description}</p>
       </div>

@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <div className={`w-full h-[70px] fixed top-0 z-50 `}>
       <div
-        style={{ height: offsetY > 70 ? 70 : 0, transition: "0.3s" }}
+        style={{ height: offsetY > 35 ? 70 : 0, transition: "0.2s" }}
         className={`absolute top-0 w-full ${
-          offsetY > 70 ? "bg-white shadow-lg" : "bg-transparent"
+          offsetY > 35 ? "bg-white shadow-lg" : "bg-transparent"
         }`}
       />
       <div className="flex justify-between max-w-[1200px] w-[95%] h-full items-center mx-auto relative">

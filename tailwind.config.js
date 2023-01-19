@@ -11,7 +11,7 @@ module.exports = {
         monument: ["monument"],
       },
       animation: {
-        "spin-slow": "spin 20s linear infinite",
+        "spin-slow": "spin 70s linear infinite",
       },
     },
   },

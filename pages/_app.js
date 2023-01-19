@@ -1,5 +1,7 @@
+import Layout from "@/components/layouts/Layout";
+import { PageOffsetProvider } from "@/context/PageOffsetProvider";
 import { useEffect, useState } from "react";
-import Layout from "../components/Layout";
+
 import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
@@ -16,9 +18,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {domLoaded ? (
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <PageOffsetProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </PageOffsetProvider>
       ) : null}
     </>
   );

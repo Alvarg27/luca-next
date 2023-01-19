@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import usePageOffset from "../hooks/usePageOffset";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const LoadingScreen = () => {

@@ -1,5 +1,3 @@
-import React from "react";
-
 const LargeCircle = ({ className }) => {
   return (
     <svg

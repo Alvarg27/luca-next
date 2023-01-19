@@ -14,7 +14,7 @@ const AboutSection = () => {
           <h2 className="font-semibold md:text-4xl text-3xl font-monument">
             We make{" "}
             <b className="text-teal-500 font-alga text-5xl">experiences</b>{" "}
-            you'll never forget
+            {`you'll never forget`}
           </h2>
           <p className="font-alga text-xl text-gray-600 my-4">
             Nos dedicamos a crear experiencias inolvidables para empresas.

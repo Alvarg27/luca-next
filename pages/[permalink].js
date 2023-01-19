@@ -33,14 +33,16 @@ const ServicePage = () => {
     <div className="pt-[100px] w-[95%] max-w-[1200px] mx-auto mb-10">
       <div className="w-full flex flex-col md:flex-row">
         <div className="h-[300px] md:h-[400px] w-full rounded-2xl relative md:w-1/2 ">
-          <Image
-            onLoad={() => setImageIsLoaded(true)}
-            src={service?.image}
-            fill
-            className={`object-cover rounded-2xl z-[2] transition duration-300 ${
-              imageIsLoaded ? "opacity-100" : "opacity-0"
-            }`}
-          />
+          {service && (
+            <Image
+              onLoad={() => setImageIsLoaded(true)}
+              src={service.image}
+              fill
+              className={`object-cover rounded-2xl z-[2] transition duration-300 ${
+                imageIsLoaded ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          )}
           <div className="w-full h-full rounded-2xl bg-gray-200 animate-pulse" />
           <div
             onClick={() => router.push("/")}

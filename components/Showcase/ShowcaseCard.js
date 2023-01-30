@@ -60,14 +60,16 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
         className="  rounded-2xl shadow-xl relative bg-gray-100 overflow-hidden cursor-pointer"
       >
         <div className="bg-gradient-to-t h-3/4 w-full from-black via-black opacity-70  absolute bottom-0 z-[2] rounded-2xl " />
-        <Image
-          onLoadingComplete={() => setImageIsLoaded(true)}
-          fill
-          src={item.image}
-          className={`object-cover rounded-2xl transition duration-300 relative z-[1] ${
-            isHovered ? "md:scale-110" : ""
-          } ${imageIsLoaded ? "opacity-100" : "opacity-0"}`}
-        />
+        {item?.files?.length >= 1 && (
+          <Image
+            onLoadingComplete={() => setImageIsLoaded(true)}
+            fill
+            src={item?.files[0]}
+            className={`object-cover rounded-2xl transition duration-300 relative z-[1] ${
+              isHovered ? "md:scale-110" : ""
+            } ${imageIsLoaded ? "opacity-100" : "opacity-0"}`}
+          />
+        )}
         <div className="bg-gray-200 w-full h-full absolute rounded-2xl animate-pulse" />
         <div className=" absolute h-full flex flex-col justify-end z-[3] p-6  w-full">
           <p className="font-medium text-lg text-white font-monument">

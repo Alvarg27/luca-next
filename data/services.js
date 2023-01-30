@@ -10,7 +10,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "León", "Monterrey"],
     permalink: "taller-de-parrillada",
-    image: "/showcase/taller-de-parrillada.webp",
+    files: ["/showcase/taller-de-parrillada.webp"],
   },
   {
     title: "Taller de mixología",
@@ -22,7 +22,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "Guadalajara"],
     permalink: "taller-de-mixologia",
-    image: "/showcase/taller-de-mixologia.webp",
+    files: ["/showcase/taller-de-mixologia.webp"],
   },
   {
     title: "Cata de vinos",
@@ -34,7 +34,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "Monterrey", "Querétaro", "Guadalajara"],
     permalink: "cata-de-vinos",
-    image: "/showcase/cata-de-vinos.webp",
+    files: ["/showcase/cata-de-vinos.webp"],
   },
   {
     title: "Cenas",
@@ -47,7 +47,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["Cualquier ciudad"],
     permalink: "cenas",
-    image: "/showcase/cenas.webp",
+    files: ["/showcase/cenas.webp"],
   },
   {
     title: "Actividades de integración",
@@ -59,7 +59,7 @@ const services = [
     duration: "2-6 Horas",
     cities: ["CDMX"],
     permalink: "actividades-de-integracion",
-    image: "/showcase/actividades-de-integracion.webp",
+    files: ["/showcase/actividades-de-integracion.webp"],
   },
   {
     title: "Eventos tipo kermes",
@@ -71,7 +71,7 @@ const services = [
     duration: "2-5 Horas",
     cities: ["CDMX"],
     permalink: "eventos-tipo-kermes",
-    image: "/showcase/kermes.webp",
+    files: ["/showcase/kermes.webp"],
   },
   {
     title: "Comidas empresariales",
@@ -83,7 +83,7 @@ const services = [
     duration: "2-5 Horas",
     cities: ["Cualquier ciudad"],
     permalink: "comidas-empresariales",
-    image: "/showcase/comida-empresarial.webp",
+    files: ["/showcase/comida-empresarial.webp"],
   },
   {
     title: "Golf",
@@ -95,7 +95,7 @@ const services = [
     duration: "3-6 Horas",
     cities: ["CDMX", "Monterrey", "Querétaro"],
     permalink: "golf",
-    image: "/showcase/top-golf.webp",
+    files: ["/showcase/top-golf.webp"],
   },
 
   {
@@ -108,7 +108,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "León", "Guadalajara", "Querétaro", "Monterry"],
     permalink: "go-karts",
-    image: "/showcase/go-karts.webp",
+    files: ["/showcase/go-karts.webp"],
   },
   {
     title: "Luchas",
@@ -120,7 +120,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX"],
     permalink: "luchas",
-    image: "/showcase/lucha.webp",
+    files: ["/showcase/lucha.webp"],
   },
   {
     title: "Renta de palcos",
@@ -132,7 +132,7 @@ const services = [
     duration: "Todo el eventos",
     cities: ["USA"],
     permalink: "renta-de-palcos",
-    image: "/showcase/palcos.webp",
+    files: ["/showcase/palcos.webp"],
   },
   {
     title: "Recorrido Tequila",
@@ -144,7 +144,7 @@ const services = [
     duration: "1 día",
     cities: ["Tequila"],
     permalink: "renta-de-palcos",
-    image: "/showcase/tequila.webp",
+    files: ["/showcase/tequila.webp"],
   },
 ];
 

@@ -56,7 +56,7 @@ const ServicePage = () => {
                 {service?.description}
               </p>
             </div>
-            <div className="bg-opacity-5 bg-black rounded-2xl  p-6 mt-8 flex flex-col">
+            <div className="bg-opacity-5 bg-black rounded-2xl  p-6 mt-8 flex justify-around">
               <div className="">
                 <div className="flex items-center my-2 ">
                   <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">

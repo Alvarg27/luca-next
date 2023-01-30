@@ -56,44 +56,51 @@ const ServicePage = () => {
                 {service?.description}
               </p>
             </div>
-            <div className="bg-opacity-5 bg-black rounded-2xl  p-6 mt-8">
-              <div className="flex items-center my-2 ">
-                <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
-                  <FaDollarSign />
+            <div className="bg-opacity-5 bg-black rounded-2xl  p-6 mt-8 flex flex-col">
+              <div className="">
+                <div className="flex items-center my-2 ">
+                  <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
+                    <FaDollarSign />
+                  </div>
+                  <p className="font-alga ml-2 text-gray-600">
+                    {service?.price}
+                  </p>
                 </div>
-                <p className="font-alga ml-2 text-gray-600">{service?.price}</p>
+                <div className="flex items-center my-2">
+                  <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] min-w-[50px] max-w-[50px] bg-opacity-60">
+                    <RiMap2Fill />
+                  </div>
+                  <p className="font-alga ml-2 text-gray-600">
+                    {service?.location}
+                  </p>
+                </div>
+                <div className="flex items-center my-2">
+                  <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
+                    <RiTeamFill />
+                  </div>
+                  <p className="font-alga ml-2 text-gray-600">
+                    {service?.people}
+                  </p>
+                </div>
               </div>
-              <div className="flex items-center my-2">
-                <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] min-w-[50px] max-w-[50px] bg-opacity-60">
-                  <RiMap2Fill />
+
+              <div>
+                <div className="flex items-center my-2">
+                  <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
+                    <RiTimeFill />
+                  </div>
+                  <p className="font-alga ml-2 text-gray-600">
+                    {service?.duration}
+                  </p>
                 </div>
-                <p className="font-alga ml-2 text-gray-600">
-                  {service?.location}
-                </p>
-              </div>
-              <div className="flex items-center my-2">
-                <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
-                  <RiTeamFill />
+                <div className="flex items-center my-2">
+                  <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
+                    <RiMapPin2Fill />
+                  </div>
+                  <p className="font-alga ml-2 text-gray-600">
+                    {service?.cities}
+                  </p>
                 </div>
-                <p className="font-alga ml-2 text-gray-600">
-                  {service?.people}
-                </p>
-              </div>
-              <div className="flex items-center my-2">
-                <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
-                  <RiTimeFill />
-                </div>
-                <p className="font-alga ml-2 text-gray-600">
-                  {service?.duration}
-                </p>
-              </div>
-              <div className="flex items-center my-2">
-                <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
-                  <RiMapPin2Fill />
-                </div>
-                <p className="font-alga ml-2 text-gray-600">
-                  {service?.cities}
-                </p>
               </div>
             </div>
           </div>

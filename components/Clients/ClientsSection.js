@@ -4,7 +4,7 @@ import ClientsCard from "./ClientsCard";
 const ClientsSection = () => {
   const clients = [
     {
-      image: "/cisco.webp",
+      image: "/cisco2.webp",
     },
     {
       image: "/dell.webp",

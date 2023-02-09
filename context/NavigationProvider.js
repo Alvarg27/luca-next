@@ -1,10 +1,7 @@
-import usePageOffset from "@/hooks/usePageOffset";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
-import { useRouter } from "next/router";
 import { createContext, useEffect, useRef, useState } from "react";
 
 const NavigationContext = createContext({});
-
 export const NavigationProvider = ({ children }) => {
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
   const homeRef = useRef();
@@ -21,7 +18,6 @@ export const NavigationProvider = ({ children }) => {
     {
       route: "/",
       ref: aboutRef,
-      offset: -150,
       title: "Nosotros",
     },
     {

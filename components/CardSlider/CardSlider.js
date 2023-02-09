@@ -45,7 +45,7 @@ const CardSlider = ({ items }) => {
         modules={[Autoplay]}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;

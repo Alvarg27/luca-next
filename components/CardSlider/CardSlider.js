@@ -41,7 +41,7 @@ const CardSlider = ({ items }) => {
       </CarrouselArrow>
       <Swiper
         spaceBetween={10}
-        slidesPerView={width > 768 ? 3 : 2}
+        slidesPerView={width > 768 ? (width > 1024 ? 3 : 2) : 1.5}
         modules={[Autoplay]}
         autoplay={{
           delay: 2500,

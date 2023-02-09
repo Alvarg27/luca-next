@@ -3,10 +3,12 @@ import React, { useRef, useState } from "react";
 import Button from "../commons/Button";
 import heroImage from "../../public/hero.webp";
 import Circles from "../commons/Circles";
+import { useRouter } from "next/router";
 
 const HeroSection = () => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
   const { homeRef } = useRef();
+  const router = useRouter();
   return (
     <section
       ref={homeRef}
@@ -25,7 +27,12 @@ const HeroSection = () => {
               Somos una agencia que se dedica a experiencias de primera clase
               con empresas multinacionales.
             </p>
-            <Button className="bg-black text-white">Ponte en contacto</Button>
+            <Button
+              onClick={() => router.push("/contacto")}
+              className="bg-black text-white"
+            >
+              Ponte en contacto
+            </Button>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <section
       ref={homeRef}
-      className="min-h-screen w-full flex justify-center items-center  relative "
+      className="min-h-screen w-full flex justify-center items-center  relative"
     >
       <div className="max-w-[1200px] w-[95%] relative z-[1] flex-col md:flex-row flex md:mt-[0px]  -mt-[50px]">
         <div className="md:w-[40%] w-full pr-4 flex items-center md:h-[500px]">

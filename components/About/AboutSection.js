@@ -9,7 +9,7 @@ const AboutSection = () => {
   return (
     <section
       ref={aboutRef}
-      className="w-[95%] max-w-[1200px] mx-auto  mt-32  lg:mt-8 lg:mb-8 flex relative flex-col md:flex-row  from-stone-100 bg-gradient-to-t via-stone-100"
+      className="w-[95%] max-w-[1200px] mx-auto  mt-0  lg:mt-8 lg:mb-8 flex relative flex-col md:flex-row  from-stone-100 bg-gradient-to-t via-stone-100"
     >
       <Image
         onLoadingComplete={() => setImageIsLoaded(true)}

@@ -40,7 +40,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "Monterrey", "Querétaro", "Guadalajara"],
     permalink: "cata-de-vinos",
-    files: ["/experiencias/catavinos1.webp", "/experiencias/catavinos1.webp"],
+    files: ["/experiencias/catavinos1.webp", "/experiencias/catavinos2.webp"],
   },
   {
     title: "Cenas",
@@ -157,7 +157,7 @@ const services = [
     duration: "Todo el eventos",
     cities: ["USA"],
     permalink: "renta-de-palcos",
-    files: ["/showcase/palcos.webp"],
+    files: ["/experiencias/palco1.webp", "/experiencias/palco2.webp"],
   },
   {
     title: "Recorrido Tequila",

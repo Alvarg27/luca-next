@@ -3,7 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    minimumCacheTTL: 60 * 60 * 24 * 180,
+    minimumCacheTTL: 60 * 60 * 24 * 360,
   },
 };
 

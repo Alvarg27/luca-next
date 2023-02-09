@@ -30,8 +30,8 @@ const ServicePage = () => {
     setService(result);
   }, [router.query]);
   return (
-    <div className="pt-[100px] mx-auto mb-10 relative">
-      <div className="h-[500px] max-w-[1200px] w-full rounded-2xl relative ">
+    <div className="pt-[100px] mx-auto mb-10 relative w-full">
+      <div className=" max-w-[1200px] mx-auto w-full rounded-2xl relative ">
         {service && service?.files?.length >= 1 ? (
           <FilesCarrousel files={service.files} />
         ) : (

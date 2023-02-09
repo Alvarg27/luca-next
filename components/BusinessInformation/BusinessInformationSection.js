@@ -4,7 +4,7 @@ import BusinessInformationCard from "./BusinessInformationCard";
 const BusinessInformationSection = () => {
   const [selected, setSelected] = useState();
   return (
-    <section className=" w-[95%] my-24 flex flex-col lg:flex-row md:flex-row justify-center items-center px-1 max-w-[1200px] m-auto relative">
+    <section className=" w-[95%] mt-20 flex flex-col lg:flex-row md:flex-row justify-center items-center px-1 max-w-[1200px] m-auto relative">
       <BusinessInformationCard
         className="md:pr-2 md:mb-0 mb-6"
         item={{

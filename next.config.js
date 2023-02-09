@@ -3,7 +3,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    minimumCacheTTL: 60 * 60 * 24 * 360,
+    unoptimized: true,
+    minimumCacheTTL: 60 * 60 * 24 * 365,
+    domains: ["cdn.turismo.tectify.io"],
   },
 };
 

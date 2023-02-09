@@ -11,11 +11,11 @@ const services = [
     cities: ["CDMX", "León", "Monterrey"],
     permalink: "taller-de-parrillada",
     files: [
-      "/experiencias/parrillada1.webp",
-      "/experiencias/parrillada2.webp",
-      "/experiencias/parrillada3.webp",
-      "/experiencias/parrillada4.webp",
-      "/experiencias/parrillada5.webp",
+      "https://cdn.tectify.io/luca-web/experiences/parrillada1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/parrillada2.webp",
+      "https://cdn.tectify.io/luca-web/experiences/parrillada3.webp",
+      "https://cdn.tectify.io/luca-web/experiences/parrillada4.webp",
+      "https://cdn.tectify.io/luca-web/experiences/parrillada5.webp",
     ],
   },
   {
@@ -28,7 +28,13 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "Guadalajara"],
     permalink: "taller-de-mixologia",
-    files: ["/showcase/taller-de-mixologia.webp"],
+    files: [
+      "https://cdn.tectify.io/luca-web/experiences/mixologia1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/mixologia2.webp",
+      "https://cdn.tectify.io/luca-web/experiences/mixologia3.webp",
+      "https://cdn.tectify.io/luca-web/experiences/mixologia4.webp",
+      "https://cdn.tectify.io/luca-web/experiences/mixologia5.webp",
+    ],
   },
   {
     title: "Cata de vinos",
@@ -40,7 +46,10 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "Monterrey", "Querétaro", "Guadalajara"],
     permalink: "cata-de-vinos",
-    files: ["/experiencias/catavinos1.webp", "/experiencias/catavinos2.webp"],
+    files: [
+      "https://cdn.tectify.io/luca-web/experiences/catavinos1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/catavinos2.webp",
+    ],
   },
   {
     title: "Cenas",
@@ -66,9 +75,9 @@ const services = [
     cities: ["CDMX"],
     permalink: "actividades-de-integracion",
     files: [
-      "/experiencias/actividadesdeintegracion1.webp",
-      "/experiencias/actividadesdeintegracion2.webp",
-      "/experiencias/actividadesdeintegracion3.webp",
+      "https://cdn.tectify.io/luca-web/experiences/actividadesdeintegracion1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/actividadesdeintegracion2.webp",
+      "https://cdn.tectify.io/luca-web/experiences/actividadesdeintegracion3.webp",
     ],
   },
   {
@@ -94,9 +103,9 @@ const services = [
     cities: ["Cualquier ciudad"],
     permalink: "comidas-empresariales",
     files: [
-      "/experiencias/comidasempresariales1.webp",
-      "/experiencias/comidasempresariales2.webp",
-      "/experiencias/comidasempresariales3.webp",
+      "https://cdn.tectify.io/luca-web/experiences/comidasempresariales1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/comidasempresariales2.webp",
+      "https://cdn.tectify.io/luca-web/experiences/comidasempresariales3.webp",
     ],
   },
   {
@@ -110,11 +119,11 @@ const services = [
     cities: ["CDMX", "Monterrey", "Querétaro"],
     permalink: "golf",
     files: [
-      "/experiencias/golf1.webp",
-      "/experiencias/golf2.webp",
-      "/experiencias/golf3.webp",
-      "/experiencias/golf4.webp",
-      "/experiencias/golf5.webp",
+      "https://cdn.tectify.io/luca-web/experiences/golf1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/golf2.webp",
+      "https://cdn.tectify.io/luca-web/experiences/golf3.webp",
+      "https://cdn.tectify.io/luca-web/experiences/golf4.webp",
+      "https://cdn.tectify.io/luca-web/experiences/golf5.webp",
     ],
   },
 
@@ -129,10 +138,10 @@ const services = [
     cities: ["CDMX", "León", "Guadalajara", "Querétaro", "Monterry"],
     permalink: "go-karts",
     files: [
-      "/experiencias/gokarts1.webp",
-      "/experiencias/gokarts2.webp",
-      "/experiencias/gokarts3.webp",
-      "/experiencias/gokarts4.webp",
+      "https://cdn.tectify.io/luca-web/experiences/gokarts1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/gokarts2.webp",
+      "https://cdn.tectify.io/luca-web/experiences/gokarts3.webp",
+      "https://cdn.tectify.io/luca-web/experiences/gokarts4.webp",
     ],
   },
   {
@@ -157,7 +166,10 @@ const services = [
     duration: "Todo el eventos",
     cities: ["USA"],
     permalink: "renta-de-palcos",
-    files: ["/experiencias/palco1.webp", "/experiencias/palco2.webp"],
+    files: [
+      "https://cdn.tectify.io/luca-web/experiences/palco1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/palco2.webp",
+    ],
   },
   {
     title: "Recorrido Tequila",
@@ -169,7 +181,13 @@ const services = [
     duration: "1 día",
     cities: ["Tequila"],
     permalink: "renta-de-palcos",
-    files: ["/showcase/tequila.webp"],
+    files: [
+      "https://cdn.tectify.io/luca-web/experiences/tequila1.webp",
+      "https://cdn.tectify.io/luca-web/experiences/tequila2.webp",
+      "https://cdn.tectify.io/luca-web/experiences/tequila3.webp",
+      "https://cdn.tectify.io/luca-web/experiences/tequila4.webp",
+      "https://cdn.tectify.io/luca-web/experiences/tequila5.webp",
+    ],
   },
 ];
 

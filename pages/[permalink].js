@@ -30,7 +30,7 @@ const ServicePage = () => {
     setService(result);
   }, [router.query]);
   return (
-    <div className="pt-[100px] mx-auto mb-10 relative w-full">
+    <div className="pt-[70px] mx-auto mb-10 relative w-full">
       <div className=" max-w-[1200px] mx-auto w-full rounded-2xl relative ">
         {service && service?.files?.length >= 1 ? (
           <FilesCarrousel files={service.files} />
@@ -40,9 +40,10 @@ const ServicePage = () => {
 
         <div
           onClick={() => router.push(`/?scroll=${router.query.prevscroll}`)}
-          className="z-[3] w-[45px] h-[45px] cursor-pointer rounded-full absolute top-2 left-2 text-xl flex items-center justify-center shadow-md text-gray-500 bg-gray-200"
+          className="z-[3]  h-[40px] px-2 cursor-pointer rounded-full absolute top-2 left-2 text-sm flex items-center justify-center shadow-md text-gray-500 bg-gray-200"
         >
           <RiArrowLeftLine />
+          <p>Volver</p>
         </div>
       </div>
       <div className="w-[95%] max-w-[1200px] mx-auto mt-8">
@@ -97,7 +98,7 @@ const ServicePage = () => {
                     <RiMapPin2Fill />
                   </div>
                   <div className="flex flex-wrap">
-                    {service.cities.map((x) => (
+                    {service?.cities.map((x) => (
                       <p className="font-alga ml-2 text-gray-600">{x}</p>
                     ))}
                   </div>

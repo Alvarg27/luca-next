@@ -56,12 +56,12 @@ const ShowcaseSection = () => {
   };
 
   return (
-    <section className="w-full max-w-[1200px] mx-auto mt-24 mb-10">
+    <section className="w-full max-w-[1200px] mx-auto mt-20 mb-10">
       <div className="text-center mb-10 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
           Experiencias
         </h2>
-        <p className="font-alga md:text-xl text-gray-600 my-4">
+        <p className="font-alga md:text-xl text-gray-600 my-2">
           En LUCA nos encargamos de que cada experiencia que se le brinda al
           cliente sea de la más alta calidad ofrenciendole una amplia gama de
           opciones para que encuentre las más adecuada a sus necesidades

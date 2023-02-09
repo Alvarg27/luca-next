@@ -2,6 +2,7 @@ import AboutSection from "@/components/About/AboutSection";
 import BusinessInformationSection from "@/components/BusinessInformation/BusinessInformationSection";
 import ClientsSection from "@/components/Clients/ClientsSection";
 import HeroSection from "@/components/Hero/HeroSection";
+import IncentivesSection from "@/components/Incentives/IncentivesSection";
 import ShowcaseSection from "@/components/Showcase/ShowcaseSection";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -22,6 +23,7 @@ export default function Home() {
       <BusinessInformationSection />
       <ClientsSection />
       <ShowcaseSection />
+      <IncentivesSection />
     </div>
   );
 }

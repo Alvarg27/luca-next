@@ -16,6 +16,16 @@ module.exports = {
       animation: {
         "spin-slow-mobile": "spin 40s linear infinite",
       },
+
+      keyframes: {
+        slide: {
+          "0%": { transform: "translate(0%)" },
+          "100%": { transform: "translate(-100%)" },
+        },
+      },
+      animation: {
+        slide: "slide 35s linear infinite",
+      },
     },
   },
   plugins: [],

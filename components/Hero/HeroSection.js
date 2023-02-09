@@ -14,12 +14,12 @@ const HeroSection = () => {
       ref={homeRef}
       className="min-h-screen w-full flex justify-center items-center  relative"
     >
-      <div className="max-w-[1200px] w-[95%] relative z-[1] flex-col md:flex-row flex md:mt-[0px]  -mt-[50px]">
+      <div className="max-w-[1200px] w-[95%] relative z-[1] flex-col md:flex-row flex md:mt-[0px]  -mt-[60px]">
         <div className="md:w-[40%] w-full pr-4 flex items-center md:h-[500px]">
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
-            <h2 className="text-5xl lg:text-5xl font-medium font-monument">
+            <h2 className="text-4xl lg:text-5xl font-medium font-monument">
               Experience brands from a new point of{" "}
-              <b className="font-alga text-[65px] lg:text-[65px] text-teal-500">
+              <b className="font-alga text-[45px] lg:text-[65px] text-teal-500">
                 view
               </b>
             </h2>

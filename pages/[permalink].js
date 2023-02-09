@@ -96,9 +96,11 @@ const ServicePage = () => {
                   <div className="bg-teal-100 text-teal-500  text-3xl rounded-full flex justify-center items-center h-[50px] w-[50px] bg-opacity-60">
                     <RiMapPin2Fill />
                   </div>
-                  <p className="font-alga ml-2 text-gray-600">
-                    {service?.cities}
-                  </p>
+                  <div className="flex flex-wrap">
+                    {service.cities.map((x) => (
+                      <p className="font-alga ml-2 text-gray-600">{x}</p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

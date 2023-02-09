@@ -33,6 +33,9 @@ const ClientsSection = () => {
     {
       image: "/netapp.webp",
     },
+    {
+      image: "/pop.webp",
+    },
   ];
 
   const handleChunks = () => {

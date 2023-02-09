@@ -10,12 +10,6 @@ module.exports = {
         alga: ["alga"],
         monument: ["monument"],
       },
-      animation: {
-        "spin-slow": "spin 70s linear infinite",
-      },
-      animation: {
-        "spin-slow-mobile": "spin 40s linear infinite",
-      },
 
       keyframes: {
         slide: {
@@ -25,6 +19,8 @@ module.exports = {
       },
       animation: {
         slide: "slide 35s linear infinite",
+        "spin-slow-mobile": "spin 40s linear infinite",
+        "spin-slow": "spin 70s linear infinite",
       },
     },
   },

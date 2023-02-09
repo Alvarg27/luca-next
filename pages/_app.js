@@ -1,4 +1,5 @@
 import Layout from "@/components/layouts/Layout";
+import { NavigationProvider } from "@/context/NavigationProvider";
 import { PageOffsetProvider } from "@/context/PageOffsetProvider";
 import { useEffect, useState } from "react";
 
@@ -18,11 +19,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {domLoaded ? (
-        <PageOffsetProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </PageOffsetProvider>
+        <NavigationProvider>
+          <PageOffsetProvider>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </PageOffsetProvider>
+        </NavigationProvider>
       ) : null}
     </>
   );

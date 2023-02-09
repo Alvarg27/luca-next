@@ -57,7 +57,7 @@ export default function DropdownMenu() {
             transform: `translateY(${showButton ? 0 : 5}px)`,
           }}
           onClick={() => {
-            router.push("/contact");
+            router.push("/contacto");
             setDropdownIsOpen(false);
           }}
           className="bg-black text-white my-4"

@@ -1,11 +1,13 @@
 import usePageOffset from "@/hooks/usePageOffset";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
+import { useRouter } from "next/router";
 import React from "react";
 import Button from "../commons/Button";
 import LucaLogo from "../commons/LucaLogo";
 import Navigation from "./Navigation";
 
 const Header = () => {
+  const router = useRouter();
   const { width } = useWindowDimensions();
   const { offsetY } = usePageOffset();
   return (
@@ -16,7 +18,7 @@ const Header = () => {
           <div className="flex items-center ">
             <Navigation className="mr-6" />
             <Button
-              onClick={() => router.push("/contact")}
+              onClick={() => router.push("/contacto")}
               className="bg-black text-white "
             >
               Ponerte en contacto

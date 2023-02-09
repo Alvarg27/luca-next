@@ -1,3 +1,4 @@
+import useNavigation from "@/hooks/useNavigation";
 import React from "react";
 import ClientsCard from "./ClientsCard";
 
@@ -57,8 +58,13 @@ const ClientsSection = () => {
     return result;
   };
 
+  const { clientsRef } = useNavigation();
+
   return (
-    <section className="w-[95%] max-w-[1200px] mx-auto flex flex-col lg:flex-row mt-10 relative ">
+    <section
+      ref={clientsRef}
+      className="w-[95%] max-w-[1200px] mx-auto flex flex-col lg:flex-row mt-10 relative "
+    >
       <div className="lg:w-1/2 w-full flex items-center relative ">
         <div className="lg:w-2/3 lg:mx-0 mx-auto lg:text-left text-center mb-8 lg:mb-0">
           <h2 className="md:text-5xl text-4xl font-semibold font-monument">

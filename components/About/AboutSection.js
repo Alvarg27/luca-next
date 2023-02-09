@@ -1,11 +1,16 @@
+import useNavigation from "@/hooks/useNavigation";
 import Image from "next/image";
 import React, { useState } from "react";
 import aboutImage from "../../public/about.webp";
 
 const AboutSection = () => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
+  const { aboutRef } = useNavigation();
   return (
-    <section className="w-[95%] max-w-[1200px] mx-auto  mt-32  lg:mt-8 lg:mb-8 flex relative flex-col md:flex-row  from-stone-100 bg-gradient-to-t via-stone-100">
+    <section
+      ref={aboutRef}
+      className="w-[95%] max-w-[1200px] mx-auto  mt-32  lg:mt-8 lg:mb-8 flex relative flex-col md:flex-row  from-stone-100 bg-gradient-to-t via-stone-100"
+    >
       <Image
         onLoadingComplete={() => setImageIsLoaded(true)}
         src={aboutImage}

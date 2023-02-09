@@ -1,4 +1,5 @@
 import services from "@/data/services";
+import useNavigation from "@/hooks/useNavigation";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 import React, { useState } from "react";
 import ShowcaseCard from "./ShowcaseCard";
@@ -55,8 +56,13 @@ const ShowcaseSection = () => {
     return result;
   };
 
+  const { servicesRef } = useNavigation();
+
   return (
-    <section className="w-full max-w-[1200px] mx-auto mt-20 mb-10">
+    <section
+      ref={servicesRef}
+      className="w-full max-w-[1200px] mx-auto mt-20 mb-10"
+    >
       <div className="text-center mb-10 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
           Experiencias

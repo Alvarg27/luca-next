@@ -61,7 +61,7 @@ const DropdownItem = ({ item, index }) => {
         handleClick();
         setDropdownIsOpen(false);
       }}
-      className="mx-1 flex items-center  h-[50px] rounded-lg cursor-pointer text-4xl font-medium"
+      className="mx-1 flex items-center  h-[50px] rounded-lg cursor-pointer text-xl font-monument font-medium"
     >
       <p
         style={{

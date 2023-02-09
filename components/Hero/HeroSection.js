@@ -1,14 +1,18 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Button from "../commons/Button";
 import heroImage from "../../public/hero.webp";
 import Circles from "../commons/Circles";
 
 const HeroSection = () => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
+  const { homeRef } = useRef();
   return (
-    <section className="min-h-screen w-full flex justify-center items-center  relative ">
-      <div className="max-w-[1200px] w-[95%] relative z-[1] flex-col md:flex-row flex md:mt-[0px]  mt-[120px]">
+    <section
+      ref={homeRef}
+      className="min-h-screen w-full flex justify-center items-center  relative "
+    >
+      <div className="max-w-[1200px] w-[95%] relative z-[1] flex-col md:flex-row flex md:mt-[0px]  -mt-[50px]">
         <div className="md:w-[40%] w-full pr-4 flex items-center md:h-[500px]">
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
             <h2 className="text-5xl lg:text-5xl font-medium font-monument">

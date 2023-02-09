@@ -13,7 +13,7 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <section className="bg-neutral-800 md:rounded-none ">
+    <section className="bg-neutral-800 md:rounded-none relative">
       <div className="w-[90%] ] max-w-[1200px] md:h-[250px]  mx-auto flex-col flex justify-between">
         <div className="mt-8">
           <div className="flex w-full justify-between pb-4">

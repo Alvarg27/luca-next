@@ -98,8 +98,10 @@ const ServicePage = () => {
                     <RiMapPin2Fill />
                   </div>
                   <div className="flex flex-wrap">
-                    {service?.cities.map((x) => (
-                      <p className="font-alga ml-2 text-gray-600">{x}</p>
+                    {service?.cities.map((x, i) => (
+                      <p key={i} className="font-alga ml-2 text-gray-600">
+                        {x}
+                      </p>
                     ))}
                   </div>
                 </div>

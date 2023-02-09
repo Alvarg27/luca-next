@@ -12,7 +12,7 @@ const BusinessInformationSection = () => {
           icon: "RiFocus2Line",
           label: "Misión",
           description:
-            "Con la creación constante de nuevas ideas e innovación en experiencias unicas para tu equipo de trabajo, cumpliremos nuestro objetivo de fortalecer nuestra presencia nacional e internacional para seguir brindando el mejor servicio a nuestros clientes. Además fortaleceremos cada area de la empresa para brindar un servicio completo y de calidad.",
+            "Buscamos la integración del equipo de trabajo mediante experiencias de primera clase en las cuales se podrá disfrutar de momentos inigualables. Asimismo estamos comprometidos a escuchar las necesidades de nuestros clientes y proporcionarles las mejores opciones para que alcancen sus objetivos de acuerdo a sus necesidades. A través de productos promocionales y regalos corporativos buscamos que tengas la mejor opción para hacer sentir especial a tus cliente",
         }}
       />
       <BusinessInformationCard
@@ -22,7 +22,7 @@ const BusinessInformationSection = () => {
           icon: "RiEyeLine",
           label: "Visión",
           description:
-            "Buscamos la integración del equipo de trabajo mediante experiencias de primera clase en las cuales se podrá disfrutar de momentos inigualables. Asimismo estamos comprometidos a escuchar las necesidades de nuestros clientes y proporcionarles las mejores opciones para que alcancen sus objetivos de acuerdo a sus necesidades. A través de productos promocionales y regalos corporativos buscamos que tengas la mejor opción para hacer sentir especial a tus cliente",
+            "Con la creación constante de nuevas ideas e innovación en experiencias unicas para tu equipo de trabajo, cumpliremos nuestro objetivo de fortalecer nuestra presencia nacional e internacional para seguir brindando el mejor servicio a nuestros clientes. Además fortaleceremos cada area de la empresa para brindar un servicio completo y de calidad.",
         }}
       />
     </section>

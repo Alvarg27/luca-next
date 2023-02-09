@@ -7,6 +7,7 @@ import FileCarrouselCard from "./FilesCarrouselCard";
 import CarrouselArrow from "components/Carrousel/CarrouselArrow";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import PaginationDot from "components/Carrousel/PaginationDot";
+import { Autoplay } from "swiper";
 
 const FilesCarrousel = ({ files }) => {
   const [loaded, setLoaded] = useState(false);
@@ -37,6 +38,11 @@ const FilesCarrousel = ({ files }) => {
         <IoChevronForward />
       </CarrouselArrow>
       <Swiper
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
@@ -44,7 +50,7 @@ const FilesCarrousel = ({ files }) => {
         pagination={{
           clickable: false,
         }}
-        className="bg-gray-100 w-full h-full dark:bg-neutral-900 lg:rounded-2xl overflow-hidden"
+        className="bg-gray-100 w-full h-full  lg:rounded-2xl overflow-hidden"
       >
         {files.map((item, i) => (
           <SwiperSlide key={i} className="w-full h-full relative">

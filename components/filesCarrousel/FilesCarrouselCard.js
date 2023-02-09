@@ -19,7 +19,7 @@ const FileCarrouselCard = ({ item, loaded, setLoaded, index }) => {
     <>
       <Image
         className={`w-full object-cover h-full relative z-[2] transition duration-1000 ${
-          loaded ? "opacity-100" : " blur-md"
+          loaded ? "opacity-100" : " blur-md opacity-0"
         }`}
         width={1500}
         height={1500}

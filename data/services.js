@@ -10,7 +10,13 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "León", "Monterrey"],
     permalink: "taller-de-parrillada",
-    files: ["/showcase/taller-de-parrillada.webp"],
+    files: [
+      "/experiencias/parrillada1.webp",
+      "/experiencias/parrillada2.webp",
+      "/experiencias/parrillada3.webp",
+      "/experiencias/parrillada4.webp",
+      "/experiencias/parrillada5.webp",
+    ],
   },
   {
     title: "Taller de mixología",
@@ -34,7 +40,7 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "Monterrey", "Querétaro", "Guadalajara"],
     permalink: "cata-de-vinos",
-    files: ["/showcase/cata-de-vinos.webp"],
+    files: ["/experiencias/catavinos1.webp", "/experiencias/catavinos1.webp"],
   },
   {
     title: "Cenas",
@@ -59,7 +65,11 @@ const services = [
     duration: "2-6 Horas",
     cities: ["CDMX"],
     permalink: "actividades-de-integracion",
-    files: ["/showcase/actividades-de-integracion.webp"],
+    files: [
+      "/experiencias/actividadesdeintegracion1.webp",
+      "/experiencias/actividadesdeintegracion2.webp",
+      "/experiencias/actividadesdeintegracion3.webp",
+    ],
   },
   {
     title: "Eventos tipo kermes",
@@ -83,7 +93,11 @@ const services = [
     duration: "2-5 Horas",
     cities: ["Cualquier ciudad"],
     permalink: "comidas-empresariales",
-    files: ["/showcase/comida-empresarial.webp"],
+    files: [
+      "/experiencias/comidasempresariales1.webp",
+      "/experiencias/comidasempresariales2.webp",
+      "/experiencias/comidasempresariales3.webp",
+    ],
   },
   {
     title: "Golf",
@@ -95,7 +109,13 @@ const services = [
     duration: "3-6 Horas",
     cities: ["CDMX", "Monterrey", "Querétaro"],
     permalink: "golf",
-    files: ["/showcase/top-golf.webp"],
+    files: [
+      "/experiencias/golf1.webp",
+      "/experiencias/golf2.webp",
+      "/experiencias/golf3.webp",
+      "/experiencias/golf4.webp",
+      "/experiencias/golf5.webp",
+    ],
   },
 
   {
@@ -108,7 +128,12 @@ const services = [
     duration: "2-3 Horas",
     cities: ["CDMX", "León", "Guadalajara", "Querétaro", "Monterry"],
     permalink: "go-karts",
-    files: ["/showcase/go-karts.webp"],
+    files: [
+      "/experiencias/gokarts1.webp",
+      "/experiencias/gokarts2.webp",
+      "/experiencias/gokarts3.webp",
+      "/experiencias/gokarts4.webp",
+    ],
   },
   {
     title: "Luchas",

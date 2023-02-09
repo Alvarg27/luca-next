@@ -15,7 +15,6 @@ import FilesCarrousel from "@/components/filesCarrousel/FliesCarrousel";
 const ServicePage = () => {
   const router = useRouter();
   const [service, setService] = useState();
-  const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   useEffect(() => {
     if (!router?.query?.permalink) {
@@ -32,7 +31,7 @@ const ServicePage = () => {
   }, [router.query]);
   return (
     <div className="pt-[100px] mx-auto mb-10 relative">
-      <div className="h-[500px] w-full rounded-2xl relative ">
+      <div className="h-[500px] max-w-[1200px] w-full rounded-2xl relative ">
         {service && service?.files?.length >= 1 ? (
           <FilesCarrousel files={service.files} />
         ) : (

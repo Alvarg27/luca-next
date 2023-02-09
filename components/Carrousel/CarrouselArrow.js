@@ -10,7 +10,9 @@ const CarrouselArrow = ({
   activeIndex,
   itemsLength,
   side,
+  slidesPerView,
 }) => {
+  const slidesPerViewNum = slidesPerView - 1 || 0;
   const [isHovered, setIsHovered] = useState(false);
   const { width } = useWindowDimensions();
   const [{ x, scale, opacity }, api] = useSpring(() => ({
@@ -22,7 +24,9 @@ const CarrouselArrow = ({
   useEffect(() => {
     if (
       (width > 1024 && side === "left" && activeIndex >= 1) ||
-      (width > 1024 && side === "right" && activeIndex < itemsLength - 1)
+      (width > 1024 &&
+        side === "right" &&
+        activeIndex + slidesPerViewNum < itemsLength - 1)
     ) {
       api.start({
         x: 0,
@@ -84,7 +88,7 @@ const CarrouselArrow = ({
       onMouseOut={() => setIsHovered(false)}
       style={{ x, scale, opacity }}
       onClick={handleSelect}
-      className={`shadow-md bg-white dark:bg-black dark:bg-opacity-50 bg-opacity-75 text-blue-500 absolute top-1/2 -translate-y-1/2 w-[40px] h-[40px] z-[10] rounded-full flex items-center justify-center backdrop-blur-md ${className} cursor-pointer`}
+      className={`shadow-md bg-white bg-opacity-95 text-blue-500 absolute top-1/2 -translate-y-1/2 w-[40px] h-[40px] z-[10] rounded-full flex items-center justify-center backdrop-blur-md ${className} cursor-pointer`}
     >
       {children}
     </animated.button>

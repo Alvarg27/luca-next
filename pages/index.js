@@ -1,6 +1,7 @@
 import AboutSection from "@/components/About/AboutSection";
 import BusinessInformationSection from "@/components/BusinessInformation/BusinessInformationSection";
 import ClientsSection from "@/components/Clients/ClientsSection";
+import GiftsSection from "@/components/Gifts/GiftsSection";
 import HeroSection from "@/components/Hero/HeroSection";
 import IncentivesSection from "@/components/Incentives/IncentivesSection";
 import ShowcaseSection from "@/components/Showcase/ShowcaseSection";
@@ -24,6 +25,7 @@ export default function Home() {
       <ClientsSection />
       <ShowcaseSection />
       <IncentivesSection />
+      <GiftsSection />
     </div>
   );
 }

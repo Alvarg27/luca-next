@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
           height: dropdownIsOpen ? height : offsetY > 70 ? 70 : 0,
           transition: "0.3s",
         }}
-        className={`fixed top-0 w-full z-[20] bg-white${
+        className={`fixed top-0 w-full z-[20] bg-gradient-to-b from-white to-stone-100 ${
           offsetY > 70 || dropdownIsOpen ? " shadow-lg" : ""
         }`}
       />

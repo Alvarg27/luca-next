@@ -5,11 +5,15 @@ import { RiInstagramFill, RiMailFill, RiWhatsappFill } from "react-icons/ri";
 
 const ContactPage = () => {
   return (
-    <div className="md:pt-[100px] pt-[70px] mx-auto w-[95%] max-w-[1200px]">
+    <div className="md:pt-[100px] pt-[100px] mx-auto w-[95%] max-w-[1200px]">
       <Circles />
-      <p className="font-monument text-xl text-teal-500">Get in touch</p>
-      <p className="font-monument text-4xl">lcastro@lucaexperiences.com</p>
-      <p className="font-monument text-4xl">729 686 3028</p>
+      <p className="font-monument md:text-xl text-4xl text-teal-500">
+        Get in touch
+      </p>
+      <p className="font-monument md:text-4xl text-lg">
+        lcastro@lucaexperiences.com
+      </p>
+      <p className="font-monument md:text-4xl text-lg">729 686 3028</p>
 
       <div className="flex items-center mt-20">
         <p className="text-xl font-alga mr-4">Follow us!</p>

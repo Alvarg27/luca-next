@@ -103,6 +103,7 @@ const services = [
     cities: ["Cualquier ciudad"],
     permalink: "comidas-empresariales",
     files: [
+      "https://cdn.tectify.io/luca-web/experiences/comidasempresariales4.webp",
       "https://cdn.tectify.io/luca-web/experiences/comidasempresariales1.webp",
       "https://cdn.tectify.io/luca-web/experiences/comidasempresariales2.webp",
       "https://cdn.tectify.io/luca-web/experiences/comidasempresariales3.webp",
@@ -180,7 +181,7 @@ const services = [
     people: "10-50",
     duration: "1 día",
     cities: ["Tequila"],
-    permalink: "renta-de-palcos",
+    permalink: "recorrido-tequila",
     files: [
       "https://cdn.tectify.io/luca-web/experiences/tequila1.webp",
       "https://cdn.tectify.io/luca-web/experiences/tequila2.webp",

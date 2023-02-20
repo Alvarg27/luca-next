@@ -3,8 +3,8 @@ import InfiniteCarrousel from "../InfiniteCarrousel/InfiniteCarrousel";
 import IncentiveCard from "./IncentiveCard";
 
 const IncentivesSection = () => {
-  const cards1 = Array.from({ length: 15 });
-  const cards2 = Array.from({ length: 16 });
+  const cards1 = Array.from({ length: 9 });
+  const cards2 = Array.from({ length: 10 });
   return (
     <div className="my-20">
       <div className="text-center mb-10 px-4">

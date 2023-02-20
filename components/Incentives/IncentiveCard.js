@@ -9,7 +9,7 @@ const IncentiveCard = ({ index, alt }) => {
         fill
         onLoadingComplete={() => setIsLoaded(true)}
         src={`https://cdn.tectify.io/luca-web/tarjetas/${
-          alt ? 15 + index + 1 : index + 1
+          alt ? 9 + index + 1 : index + 1
         }.webp`}
         className={`elative object-cover rounded-xl transition duration-500 ${
           isLoaded ? "opacity-100" : "opacity-0"

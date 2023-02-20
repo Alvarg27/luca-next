@@ -21,7 +21,7 @@ const Header = () => {
               onClick={() => router.push("/contacto")}
               className="bg-black text-white "
             >
-              Ponerte en contacto
+              Ponte en contacto
             </Button>
           </div>
         )}

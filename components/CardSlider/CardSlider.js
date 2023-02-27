@@ -14,7 +14,6 @@ const CardSlider = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
 
-  console.log(swiperRef);
   return (
     <div className=" mx-auto lg:rounded-2xl  relative overflow-hidden w-full">
       <CarrouselArrow

@@ -27,7 +27,7 @@ const Footer = () => {
                 >
                   <RiInstagramFill className="cursor-pointer mx-2" />
                 </Link>
-                <Link target="_blank" href="mailto:lcastro@lucaexperiences.com">
+                <Link target="_blank" href="mailto:lucaexperiences@gmail.com">
                   <RiMailFill className="cursor-pointer mx-2" />
                 </Link>
                 <Link
@@ -46,9 +46,15 @@ const Footer = () => {
               <b className="font-alga text-2xl text-teal-500 ">experiences</b>{" "}
               you’ll never forget
             </p>
-            <div className="flex items-center text-stone-100 md:mt-0 mt-4">
-              <RiPhoneFill className="cursor-pointer mx-2 text-stone-400" />
-              <p className="text-stone-400">729 686 3028</p>
+            <div>
+              <div className="flex items-center text-stone-100 md:mt-0 mt-4">
+                <RiPhoneFill className="cursor-pointer mx-2 text-stone-400" />
+                <p className="text-stone-400">729 686 3028</p>
+              </div>
+              <div className="flex items-center text-stone-100 md:mt-0 mt-4">
+                <RiPhoneFill className="cursor-pointer mx-2 text-stone-400" />
+                <p className="text-stone-400">442 127 1294</p>
+              </div>
             </div>
           </div>
         </div>

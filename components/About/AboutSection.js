@@ -22,17 +22,17 @@ const AboutSection = () => {
       <div className="w-full md:w-2/3  flex items-center relative lg:mt-0 mt-10">
         <div className="md:pl-10 md:text-left text-center">
           <h2 className="font-semibold md:text-4xl text-3xl font-monument">
-            We make{" "}
+            Uniendo equipos,{" "}
             <b className="text-teal-500 font-alga  md:text-[48px] text-[40px]">
-              experiences
+              fortalececiendo
             </b>{" "}
-            {`you'll never forget`}
+            empresas
           </h2>
           <p className="font-alga md:text-xl text-gray-600 my-4">
-            Nos dedicamos a crear experiencias inolvidables para empresas.
-            Brindando a nuestros clientes las mejores opciones para satisfacer
-            sus necesidades en viajes, eventos, conferencias y más. Con el
-            objetivo de llevarlos al siguiente nivel.
+            Nos dedicamos a crear experiencias para empresas. Brindando a
+            nuestros clientes las mejores opciones para satisfacer sus
+            necesidades en viajes, eventos, conferencias y más. Con el objetivo
+            de llevarlos al siguiente nivel.
           </p>
         </div>
       </div>

@@ -19,11 +19,11 @@ const PromotionalSection = () => {
           url="https://online.flippingbook.com/view/671835397/"
         />
         <PromotionalCard
-          label="Artículos promocionales 2"
+          label="Catálogo de Yetis"
           url="https://drive.google.com/file/d/1_JUDUSYV6t1pzeP4yg8rz5mqmkImdXe_/view?usp=share_link"
         />
         <PromotionalCard
-          label="Artículos promocionales 3"
+          label="Artículos promocionales 2"
           url="https://drive.google.com/file/d/1XSSaMXgaoXLhtVqxt942DsVJemCuZapP/view?usp=share_link"
         />
       </div>

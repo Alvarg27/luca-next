@@ -18,9 +18,9 @@ const HeroSection = () => {
         <div className="md:w-[40%] w-full pr-4 flex items-center md:h-[500px]">
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
             <h2 className="text-4xl lg:text-5xl font-medium font-monument">
-              Experience brands from a new point of{" "}
+              Transformando eventos en{" "}
               <b className="font-alga text-[45px] lg:text-[65px] text-teal-500">
-                view
+                experiencias
               </b>
             </h2>
             <p className="my-4 font-alga text-xl text-gray-600">

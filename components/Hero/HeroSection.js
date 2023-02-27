@@ -17,9 +17,9 @@ const HeroSection = () => {
       <div className="max-w-[1200px] w-[95%] relative z-[1] flex-col md:flex-row flex md:mt-[0px]  -mt-[60px]">
         <div className="md:w-[40%] w-full pr-4 flex items-center md:h-[500px]">
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
-            <h2 className="text-4xl lg:text-5xl font-medium font-monument">
+            <h2 className="text-3xl lg:text-5xl font-medium font-monument">
               Transformando eventos en{" "}
-              <b className="font-alga text-[45px] lg:text-[65px] text-teal-500">
+              <b className="font-alga text-[40px] lg:text-[65px] text-teal-500">
                 experiencias
               </b>
             </h2>

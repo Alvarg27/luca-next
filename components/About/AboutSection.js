@@ -24,7 +24,7 @@ const AboutSection = () => {
           <h2 className="font-semibold md:text-4xl text-3xl font-monument">
             Uniendo equipos,{" "}
             <b className="text-teal-500 font-alga  md:text-[48px] text-[40px]">
-              fortalececiendo
+              fortaleciendo
             </b>{" "}
             empresas
           </h2>

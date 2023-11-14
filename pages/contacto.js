@@ -22,7 +22,6 @@ const ContactPage = () => {
         <p className="font-monument md:text-4xl text-sm">
           lucaexperiences@gmail.com
         </p>
-        <p className="font-monument md:text-4xl text-lg">729 686 3028</p>
         <p className="font-monument md:text-4xl text-lg"> 442 127 1294</p>
 
         <div className="flex items-center mt-20">

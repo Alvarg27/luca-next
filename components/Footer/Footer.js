@@ -49,7 +49,7 @@ const Footer = () => {
             <div>
               <div className="flex items-center text-stone-100 md:mt-0 mt-4">
                 <RiPhoneFill className="cursor-pointer mx-2 text-stone-400" />
-                <p className="text-stone-400">442 127 1294</p>
+                <p className="text-stone-400">52 442 127 1294</p>
               </div>
             </div>
           </div>

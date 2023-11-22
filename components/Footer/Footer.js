@@ -32,7 +32,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://api.whatsapp.com/send/?phone=527296863028"
+                  href="https://api.whatsapp.com/send/?phone=4421271294"
                 >
                   <RiWhatsappFill className="cursor-pointer mx-2" />
                 </Link>

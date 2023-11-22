@@ -4,18 +4,30 @@ import emailjs from '@emailjs/browser';
 const Form = () => {
   const form = useRef();
   const [errors, setErrors] = useState({});
+  const [isSent, setIsSent] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    telefono: '',
+    email: '',
+    servicio: '',
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     // Validate all fields
-    const formData = new FormData(form.current);
     const fieldsToValidate = ['name', 'telefono', 'email', 'servicio'];
-
     const newErrors = {};
 
     fieldsToValidate.forEach((field) => {
-      if (!formData.get(field)) {
+      if (!formData[field]) {
         newErrors[field] = `${field.charAt(0).toUpperCase() + field.slice(1)} is required`;
       }
     });
@@ -35,7 +47,15 @@ const Form = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setErrors({}); // Clear any previous errors
+          setErrors({});
+          setIsSent(true);
+          // Reset the form data after successful submission
+          setFormData({
+            name: '',
+            telefono: '',
+            email: '',
+            servicio: '',
+          });
         },
         (error) => {
           console.log(error.text);
@@ -45,14 +65,8 @@ const Form = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-4 text-center font-monument">
-        Contáctanos
-      </h2>
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="bg-gray-100 shadow-xl rounded px-12 pt-6 pb-8 mb-4"
-      >
+      <h2 className="text-2xl font-bold mb-4 text-center font-monument">Contáctanos</h2>
+      <form ref={form} onSubmit={sendEmail} className="bg-gray-100 shadow-xl rounded px-12 pt-6 pb-8 mb-4">
         {Object.keys(errors).length > 0 && (
           <div className="mb-4 text-red-500">
             {Object.keys(errors).map((key) => (
@@ -60,11 +74,14 @@ const Form = () => {
             ))}
           </div>
         )}
+
+        {isSent && (
+          <div className="mb-4 text-base text-green-500">
+            Se envió correctamente el mensaje! {/* You can customize this message */}
+          </div>
+        )}
         <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="name"
-          >
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Nombre y Apellido<span className="text-red-500">*</span>:
           </label>
           <input
@@ -72,14 +89,13 @@ const Form = () => {
             id="name"
             type="text"
             name="name"
+            value={formData.name}
+            onChange={handleInputChange}
           />
         </div>
 
         <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="telefono"
-          >
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="telefono">
             Número de teléfono<span className="text-red-500">*</span>:
           </label>
           <input
@@ -87,14 +103,13 @@ const Form = () => {
             id="telefono"
             type="text"
             name="telefono"
+            value={formData.telefono}
+            onChange={handleInputChange}
           />
         </div>
 
         <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="email"
-          >
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Email<span className="text-red-500">*</span>:
           </label>
           <input
@@ -102,14 +117,13 @@ const Form = () => {
             id="email"
             type="email"
             name="email"
+            value={formData.email}
+            onChange={handleInputChange}
           />
         </div>
 
         <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="servicio"
-          >
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="servicio">
             ¿Qué servicio deseas<span className="text-red-500">*</span>?
           </label>
           <input
@@ -117,6 +131,8 @@ const Form = () => {
             id="servicio"
             type="text"
             name="servicio"
+            value={formData.servicio}
+            onChange={handleInputChange}
           />
         </div>
 

@@ -51,6 +51,10 @@ const Footer = () => {
                 <RiPhoneFill className="cursor-pointer mx-2 text-stone-400" />
                 <p className="text-stone-400">52 442 127 1294</p>
               </div>
+              <div className="flex items-center text-stone-100 md:mt-0 mt-4">
+                <RiMailFill className="cursor-pointer mx-2 text-stone-400" />
+                <p className="text-stone-400">lucaexperiences@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>

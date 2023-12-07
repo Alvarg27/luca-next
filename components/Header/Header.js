@@ -16,13 +16,7 @@ const Header = () => {
         <LucaLogo />
         {width > 1024 && (
           <div className="flex items-center ">
-            <Navigation className="mr-6" />
-            <Button
-              onClick={() => router.push("/contacto")}
-              className="bg-black text-white "
-            >
-              Ponte en contacto
-            </Button>
+            <Navigation />
           </div>
         )}
       </div>

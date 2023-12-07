@@ -51,7 +51,7 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
   };
 
   return (
-    <div className="w-full p-1">
+    <div className="w-full p-1 ">
       <div
         onClick={() => router.push(`/${item.permalink}?prevscroll=${offsetY}`)}
         onMouseOver={() => setIsHovered(true)}
@@ -67,11 +67,11 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
             src={item?.files[0]}
             className={`object-cover rounded-2xl transition duration-300 relative z-[1] ${
               isHovered ? "md:scale-110" : ""
-            } ${imageIsLoaded ? "opacity-100" : "opacity-0"}`}
+            } ${imageIsLoaded ? "opacity-100" : "opacity-0 "}`}
           />
         )}
-        <div className="bg-gray-200 w-full h-full absolute rounded-2xl animate-pulse" />
-        <div className=" absolute h-full flex flex-col justify-end z-[3] p-6  w-full">
+        <div className="bg-gray-200 w-full h-full absolute rounded-2xl animate-pulse " />
+        <div className=" absolute h-full flex flex-col justify-end z-[3] p-6  w-full ">
           <p className="font-medium text-lg text-white font-monument">
             {item.title}
           </p>

@@ -50,20 +50,6 @@ export default function DropdownMenu() {
         {items.map((item, i) => (
           <DropdownItem key={i} item={item} index={i} />
         ))}
-        <Button
-          style={{
-            opacity: showButton ? 1 : 0,
-            transition: "0.2s",
-            transform: `translateY(${showButton ? 0 : 5}px)`,
-          }}
-          onClick={() => {
-            router.push("/contacto");
-            setDropdownIsOpen(false);
-          }}
-          className="bg-black text-white my-4"
-        >
-          Contactar
-        </Button>
       </div>
     </div>
   );

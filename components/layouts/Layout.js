@@ -7,6 +7,7 @@ import MenuIcon from "../commons/MenuIcon";
 import Footer from "../Footer/Footer";
 import DropdownMenu from "../Header/DropwdownMenu";
 import Header from "../Header/Header";
+import WhatsAppButton from "../WhatsappButton/WhatsappButton";
 
 const GoogleTagManagerNoscript = () => (
   <noscript
@@ -61,10 +62,14 @@ const Layout = ({ children }) => {
           offsetY > 70 || dropdownIsOpen ? " shadow-lg" : ""
         }`}
       />
+      
       <Header />
       <div className=" min-h-screen flex flex-col justify-between">
         {children}
         <Footer />
+      </div>
+      <div>
+        <WhatsAppButton />
       </div>
     </div>
   );

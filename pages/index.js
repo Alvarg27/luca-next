@@ -5,6 +5,7 @@ import GiftsSection from "@/components/Gifts/GiftsSection";
 import HeroSection from "@/components/Hero/HeroSection";
 import IncentivesSection from "@/components/Incentives/IncentivesSection";
 import PromotionalSection from "@/components/Promotional/PromotionalSection";
+import QuienesSomos from "@/components/QuienesSomos/QuienesSomos";
 import ShowcaseSection from "@/components/Showcase/ShowcaseSection";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -22,7 +23,8 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
-      <BusinessInformationSection />
+      <QuienesSomos />
+      {/* <BusinessInformationSection /> */}
       <ClientsSection />
       <ShowcaseSection />
       <IncentivesSection />

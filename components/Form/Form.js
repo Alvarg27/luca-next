@@ -82,7 +82,7 @@ const Form = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-gray-100 shadow-xl rounded px-12 pt-6 pb-8 mb-4 border border-teal-500"
+        className="bg-gray-100 shadow-xl rounded px-12 pt-6 pb-8 mb-4 "
       >
         {Object.keys(errors).length > 0 && (
           <div className="mb-4 text-red-500">

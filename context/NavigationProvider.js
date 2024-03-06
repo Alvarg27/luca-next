@@ -8,6 +8,8 @@ export const NavigationProvider = ({ children }) => {
   const aboutRef = useRef();
   const clientsRef = useRef();
   const servicesRef = useRef();
+  const eventRef = useRef();
+  const experiencesRef = useRef();
   const { width } = useWindowDimensions();
   const items = [
     {
@@ -25,12 +27,39 @@ export const NavigationProvider = ({ children }) => {
       ref: clientsRef,
       title: "Clientes",
     },
+  ];
+  const itemsMobileNav = [
     {
       route: "/",
-      ref: servicesRef,
-      title: "Servicios",
+      ref: homeRef,
+      title: "Inicio",
     },
-  ];
+    {
+      route: "/",
+      ref: aboutRef,
+      title: "Nosotros",
+    },
+    {
+      route: "/",
+      ref: clientsRef,
+      title: "Clientes",
+    },
+    {
+      route: "/Experiences",
+      ref: experiencesRef,
+      title: "Experiences",
+    },
+    {
+      route: "/EventPlanning",
+      ref: eventRef,
+      title: "Event Planning",
+    },
+    {
+      route: "/events/[eventpermalink]", // Assuming event routes are under /events
+      ref: eventRef, // Ref related to events, adjust as needed
+      title: "Event", // Title for the event link
+    },
+  ]
   useEffect(() => {
     if (width > 1024) {
       setDropdownIsOpen(false);
@@ -43,9 +72,11 @@ export const NavigationProvider = ({ children }) => {
         aboutRef,
         clientsRef,
         servicesRef,
+        eventRef,
         items,
         dropdownIsOpen,
         setDropdownIsOpen,
+        itemsMobileNav,
       }}
     >
       {children}

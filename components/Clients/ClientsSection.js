@@ -63,7 +63,7 @@ const ClientsSection = () => {
   return (
     <section
       ref={clientsRef}
-      className="w-[95%] max-w-[1200px] mx-auto flex flex-col lg:flex-row mt-10 relative "
+      className="w-[95%] max-w-[1200px] mx-auto flex flex-col lg:flex-row mt-10 relative pb-40"
     >
       <div className="lg:w-1/2 w-full flex items-center relative ">
         <div className="lg:w-2/3 lg:mx-0 mx-auto lg:text-left text-center mb-8 lg:mb-0">

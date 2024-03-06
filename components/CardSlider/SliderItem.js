@@ -15,9 +15,9 @@ const SliderItem = ({ item }) => {
               imageIsLoaded ? "opacity-100" : "opacity-0"
             }`}
             onLoadingComplete={() => setImageIsLoaded(true)}
-          />
+          /> 
         </div>
-        <div className="px-4 pt-4 pb-10 h-[150px]">
+        <div className="px-4 pt-4 pb-10 h-[80px]">
           <p className="text-teal-500 font-alga">Regalos</p>
           <p className="font-monument">{item.title}</p>
         </div>

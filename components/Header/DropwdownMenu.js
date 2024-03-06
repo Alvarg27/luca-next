@@ -1,12 +1,14 @@
-import useNavigation from "@/hooks/useNavigation";
-import usePageOffset from "@/hooks/usePageOffset";
-import useWindowDimensions from "@/hooks/useWindowDimensions";
-import { Dialog, Transition } from "@headlessui/react";
-import { useRouter } from "next/router";
-import { Fragment, useEffect, useState } from "react";
-import Button from "../commons/Button";
-import MenuIcon from "../commons/MenuIcon";
-import DropdownItem from "./DropdownItem";
+import useNavigation from '@/hooks/useNavigation';
+import usePageOffset from '@/hooks/usePageOffset';
+import useWindowDimensions from '@/hooks/useWindowDimensions';
+import { Dialog, Transition } from '@headlessui/react';
+import { useRouter } from 'next/router';
+import { Fragment, useEffect, useState } from 'react';
+import Button from '../commons/Button';
+import MenuIcon from '../commons/MenuIcon';
+import DropdownItem from './DropdownItem';
+import DropdownProfile from './DropdownProfile';
+import Link from 'next/link';
 
 export default function DropdownMenu() {
   const [showButton, setShowButton] = useState(false);
@@ -14,7 +16,7 @@ export default function DropdownMenu() {
   const router = useRouter();
   const { dropdownIsOpen, setDropdownIsOpen } = useNavigation();
   const { height, width } = useWindowDimensions();
-  const { items } = useNavigation();
+  const { itemsMobileNav } = useNavigation();
   const { offsetY } = usePageOffset();
 
   useEffect(() => {
@@ -26,7 +28,7 @@ export default function DropdownMenu() {
       setShow(true);
       setTimeout(() => {
         setShowButton(true);
-      }, 50 + items.length * 50);
+      }, 50 + itemsMobileNav.length * 50);
     }
 
     if (!dropdownIsOpen) {
@@ -40,15 +42,15 @@ export default function DropdownMenu() {
   return (
     <div
       style={{
-        transition: "0.3s",
+        transition: '0.3s',
       }}
       className={`w-full fixed top-0 z-[50] flex-col flex px-4 touch-none overflow-hidden ${
-        show ? "flex" : "hidden"
+        show ? 'flex' : 'hidden'
       }`}
     >
       <div className={`flex flex-col mt-[70px]`}>
-        {items.map((item, i) => (
-          <DropdownItem key={i} item={item} index={i} />
+        {itemsMobileNav.map((itemsMobileNav, i) => (
+          <DropdownItem key={i} item={itemsMobileNav} index={i} />
         ))}
       </div>
     </div>

@@ -27,12 +27,12 @@ const Footer = () => {
                 >
                   <RiInstagramFill className="cursor-pointer mx-2" />
                 </Link>
-                <Link target="_blank" href="mailto:lucaexperiences@gmail.com">
+                <Link target="_blank" href="mailto:egarom@lucaexperiences.com">
                   <RiMailFill className="cursor-pointer mx-2" />
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://api.whatsapp.com/send/?phone=4421271294"
+                  href="https://api.whatsapp.com/send/?phone=5578530972"
                 >
                   <RiWhatsappFill className="cursor-pointer mx-2" />
                 </Link>
@@ -47,13 +47,17 @@ const Footer = () => {
               you’ll never forget
             </p>
             <div>
-              <div className="flex items-center text-stone-100 md:mt-0 mt-4">
+              <div className="flex items-center text-stone-100 md:mt-1 mt-4">
                 <RiPhoneFill className="cursor-pointer mx-2 text-stone-400" />
-                <p className="text-stone-400">52 442 127 1294</p>
+                <p className="text-stone-400">+52 1 55 7853 0972</p>
               </div>
-              <div className="flex items-center text-stone-100 md:mt-0 mt-4">
+              <div className="flex items-center text-stone-100 md:mt-1 mt-4">
                 <RiMailFill className="cursor-pointer mx-2 text-stone-400" />
-                <p className="text-stone-400">lucaexperiences@gmail.com</p>
+                <p className="text-stone-400">lcastro@lucaexperiences.com</p>
+              </div>
+              <div className="flex items-center text-stone-100 md:mt-1 mt-4">
+                <RiMailFill className="cursor-pointer mx-2 text-stone-400" />
+                <p className="text-stone-400">egarom@lucaexperiences.com</p>
               </div>
             </div>
           </div>

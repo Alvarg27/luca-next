@@ -51,7 +51,7 @@ const services = [
       "https://cdn.tectify.io/luca-web/experiences/catavinos2.webp",
     ],
   },
-  {
+ /*  {
     title: "Cenas",
     description:
       "El buen vivir es un arte y por eso ofrecemos cenas en restaurantes selectos para poder brindar la mejor atención a cada cliente, adecuándonos al gusto de cada invitado y a sus necesidades. Crea un momento compartiendo los mejores platillos.",
@@ -63,7 +63,7 @@ const services = [
     cities: ["Cualquier ciudad"],
     permalink: "cenas",
     files: ["/showcase/cenas.webp"],
-  },
+  }, */
   {
     title: "Actividades de integración",
     description:
@@ -92,7 +92,7 @@ const services = [
     permalink: "eventos-tipo-kermes",
     files: ["/showcase/kermes.webp"],
   },
-  {
+/*   {
     title: "Comidas empresariales",
     description:
       "Rompe la rutina con una amplia variedad de platillos para tus invitados. Sorpréndelos con lo mejor de la comida mexicana, italiana, parrilladas, bufet y menús por tiempo, acomodados al gusto de cada cliente.",
@@ -108,7 +108,7 @@ const services = [
       "https://cdn.tectify.io/luca-web/experiences/comidasempresariales2.webp",
       "https://cdn.tectify.io/luca-web/experiences/comidasempresariales3.webp",
     ],
-  },
+  }, */
   {
     title: "Golf",
     description:
@@ -145,7 +145,7 @@ const services = [
       "https://cdn.tectify.io/luca-web/experiences/gokarts4.webp",
     ],
   },
-  {
+/*   {
     title: "Luchas",
     description:
       "Sumérgete en el folklore mexicano visitando la arena de estos grandes guerreros. Disfruta de la lucha libre desde el freedom de la Arena México, y acompáñalo con la variedad de alimentos y bebidas que hay disponibles en el inmueble. Será una experiencia inolvidable.",
@@ -156,8 +156,8 @@ const services = [
     cities: ["CDMX"],
     permalink: "luchas",
     files: ["/showcase/lucha.webp"],
-  },
-  {
+  }, */
+/*   {
     title: "Renta de palcos",
     description:
       "Luca Creating Experiences se encarga de que disfrutes de los más grandes escenarios deportivos con una comodidad de lujo. Vivirás monumentales partidos en palcos creando un momento agradable en compañía de tus invitados.",
@@ -171,7 +171,7 @@ const services = [
       "https://cdn.tectify.io/luca-web/experiences/palco1.webp",
       "https://cdn.tectify.io/luca-web/experiences/palco2.webp",
     ],
-  },
+  }, */
   {
     title: "Recorrido Tequila",
     description:

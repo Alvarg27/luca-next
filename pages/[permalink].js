@@ -25,6 +25,7 @@ const ServicePage = () => {
     }
     const result = services.find((x) => x.permalink === router.query.permalink);
     if (!result) {
+      console.log("not found PERMALINK");
       router.push("/404");
     }
     setService(result);

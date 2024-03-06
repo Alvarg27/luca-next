@@ -1,9 +1,9 @@
-import trimString from "@/helpers/trimString";
-import usePageOffset from "@/hooks/usePageOffset";
-import Image from "next/image";
-import { useRouter } from "next/router";
-import React, { useState } from "react";
-import { RiArrowRightLine } from "react-icons/ri";
+import trimString from '@/helpers/trimString';
+import usePageOffset from '@/hooks/usePageOffset';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import React, { useState } from 'react';
+import { RiArrowRightLine } from 'react-icons/ri';
 
 function isEven(n) {
   return n % 2 == 0;
@@ -13,7 +13,13 @@ function isOdd(n) {
   return Math.abs(n % 2) == 1;
 }
 
-const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
+const ShowcaseCard = ({
+  item,
+  colIndex,
+  index,
+  maxLength,
+  length,
+}) => {
   const router = useRouter();
   const { offsetY } = usePageOffset();
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
@@ -53,10 +59,14 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
   return (
     <div className="w-full p-1 ">
       <div
-        onClick={() => router.push(`/${item.permalink}?prevscroll=${offsetY}`)}
+        onClick={() => {
+          const url = `/${item.permalink}?prevscroll=${offsetY}`;
+          console.log('URL:', url); // Print the URL
+          router.push(url); // Navigate
+        }}
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
-        style={{ height: handleHeight(), transition: "0.3s" }}
+        style={{ height: handleHeight(), transition: '0.3s' }}
         className="  rounded-2xl shadow-xl relative bg-gray-100 overflow-hidden cursor-pointer"
       >
         <div className="bg-gradient-to-t h-3/4 w-full from-black via-black opacity-70  absolute bottom-0 z-[2] rounded-2xl " />
@@ -65,9 +75,10 @@ const ShowcaseCard = ({ item, colIndex, index, maxLength, length }) => {
             onLoadingComplete={() => setImageIsLoaded(true)}
             fill
             src={item?.files[0]}
+            alt="showcase-item"
             className={`object-cover rounded-2xl transition duration-300 relative z-[1] ${
-              isHovered ? "md:scale-110" : ""
-            } ${imageIsLoaded ? "opacity-100" : "opacity-0 "}`}
+              isHovered ? 'md:scale-110' : ''
+            } ${imageIsLoaded ? 'opacity-100' : 'opacity-0 '}`}
           />
         )}
         <div className="bg-gray-200 w-full h-full absolute rounded-2xl animate-pulse " />

@@ -1,23 +1,23 @@
-import services from "@/data/services";
-import useNavigation from "@/hooks/useNavigation";
-import useWindowDimensions from "@/hooks/useWindowDimensions";
-import React, { useState } from "react";
-import ShowcaseCard from "./ShowcaseCard";
+import services from '@/data/services';
+import useNavigation from '@/hooks/useNavigation';
+import useWindowDimensions from '@/hooks/useWindowDimensions';
+import React, { useState } from 'react';
+import ShowcaseCard from './ShowcaseCard';
 
 const ShowcaseSection = () => {
   const { width } = useWindowDimensions();
 
   const handleColumnWidth = () => {
     if (width > 768 && width <= 1024) {
-      return 100 / 3 + "%";
+      return 100 / 3 + '%';
     }
     if (width > 1024) {
       if (services.length === 3) {
-        return 100 / 3 + "%";
+        return 100 / 3 + '%';
       }
-      return "25%";
+      return '25%';
     }
-    return "50%";
+    return '50%';
   };
 
   const handleColumns = () => {
@@ -61,16 +61,23 @@ const ShowcaseSection = () => {
   return (
     <section
       ref={servicesRef}
-      className="w-full max-w-[1200px] mx-auto mt-20 mb-10"
+      className="w-full max-w-[1200px] mx-auto mb-10"
     >
       <div className="text-center mb-10 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
-          Experiencias
+          EXPERIENCES
         </h2>
-        <p className="font-alga md:text-xl text-gray-600 my-2">
-          En LUCA nos encargamos de que cada experiencia que se le brinda al
-          cliente sea de la más alta calidad ofrenciendole una amplia gama de
-          opciones para que encuentre las más adecuada a sus necesidades
+        <p className="font-alga md:text-xl text-gray-600 my-6">
+          En LUCA, nos especializamos en generar experiencias que
+          dejen huella, adaptamos cada experiencia según tus
+          preferencias y necesidades, asegurando que cada detalle se
+          alinee perfectamente con tu marca para alcanzar tus
+          objetivos corporativos. Ya sea fortalecer la cultura
+          empresarial, motivar mejorar la colaboración en tus equipos
+          de trabajo mediante el team building o aumentar la
+          satisfacción y confianza de tus clientes, trabajamos contigo
+          para lograr resultados tangibles e impulsar el crecimiento y
+          éxito de tu empresa.
         </p>
       </div>
       <div className="flex w-full">

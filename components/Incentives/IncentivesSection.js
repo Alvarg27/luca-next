@@ -6,7 +6,7 @@ const IncentivesSection = () => {
   const cards1 = Array.from({ length: 9 });
   const cards2 = Array.from({ length: 10 });
   return (
-    <div className="pb-20">
+    <div className="my-20">
       <div className="text-center mb-4 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
           INCENTIVOS
@@ -24,10 +24,8 @@ const IncentivesSection = () => {
           </p>
         </div>
       </div>
-      <div className="py-10">
-        <InfiniteCarrousel items={cards1} />
-        <InfiniteCarrousel items={cards2} slow={true} alt />
-      </div>
+      <InfiniteCarrousel items={cards1} />
+      <InfiniteCarrousel items={cards2} slow={true} alt />
     </div>
   );
 };

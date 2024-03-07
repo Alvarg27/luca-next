@@ -25,7 +25,7 @@ const Header = () => {
               onMouseOut={() => setOpenProfile(false)}
             >
               <p className="mx-1 text-lg hover:bg-black hover:dark:bg-white  hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer">
-                Servicos
+                Servicios
               </p>
               {openProfile && <DropdownProfile />}
             </div>

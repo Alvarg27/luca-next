@@ -2,7 +2,6 @@ import Layout from "@/components/layouts/Layout";
 import { NavigationProvider } from "@/context/NavigationProvider";
 import { PageOffsetProvider } from "@/context/PageOffsetProvider";
 import { useEffect, useState } from "react";
-import { initializeGoogleTagManager } from "../pages/googleTagManager";
 import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
@@ -15,7 +14,6 @@ export default function App({ Component, pageProps }) {
       "color: rgb(29,78,216); font-family:helvetica; font-size: 38px ; font-weight: bold;"
     );
     setDomLoaded(true);
-    initializeGoogleTagManager('TM-5BDSG7S7');
   }, []);
   return (
     <>

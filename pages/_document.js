@@ -24,11 +24,10 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
-            }}
-          />
+          <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BDSG7S7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
         </body>
       </Html>
     );

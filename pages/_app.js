@@ -2,11 +2,28 @@ import Layout from '@/components/layouts/Layout';
 import { NavigationProvider } from '@/context/NavigationProvider';
 import { PageOffsetProvider } from '@/context/PageOffsetProvider';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import '../styles/globals.css';
 import Script from 'next/script';
+import * as fbq from '@/lib/fpixels';
 
 export default function App({ Component, pageProps }) {
   const [domLoaded, setDomLoaded] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    // This pageview only triggers the first time (it's important for Pixel to have real information)
+    fbq.pageview();
+
+    const handleRouteChange = () => {
+      fbq.pageview();
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   useEffect(() => {
     console.log(
@@ -16,6 +33,7 @@ export default function App({ Component, pageProps }) {
     );
     setDomLoaded(true);
   }, []);
+
   return (
     <>
       {domLoaded ? (
@@ -23,24 +41,38 @@ export default function App({ Component, pageProps }) {
           <PageOffsetProvider>
             <Layout>
               <Script
+                id="fb-pixel"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    !function(f,b,e,v,n,t,s)
+                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                    n.queue=[];t=b.createElement(e);t.async=!0;
+                    t.src=v;s=b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t,s)}(window, document,'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', ${fbq.FB_PIXEL_ID});
+                  `,
+                }}
+              />
+              <Script
                 strategy="afterInteractive"
                 src="https://www.googletagmanager.com/gtag/js?id=GTM-5BDSG7S7"
               />
               <Script
                 strategy="afterInteractive"
-                src="https://www.googletagmanager.com/ns.html?id=GTM-5BDSG7S7"
-              />
-              <Script
-                strategy="afterInteractive"
                 id="google-analytics"
-              >
-                {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'GTM-5BDSG7S7');
-                  `}
-              </Script>
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'GTM-5BDSG7S7');
+                  `,
+                }}
+              />
               <Script
                 id="gtm-script"
                 strategy="afterInteractive"

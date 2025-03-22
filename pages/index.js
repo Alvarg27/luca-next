@@ -22,16 +22,16 @@ export default function Home() {
   }, [router]);
   return (
     <div>
-      <HeroSection />
       {/*<AboutSection />*/}
       {/*<QuienesSomos />*/}
       {/* <BusinessInformationSection /> */}
       {/* <ShowcaseSection /> */}
       <DoubleCarousel />
-      <IncentivesSection />
+      <ClientsSection />
       <PromotionalSection />
       <GiftsSection />
-      <ClientsSection />
+      <IncentivesSection />
+      <HeroSection />
     </div>
   );
 }

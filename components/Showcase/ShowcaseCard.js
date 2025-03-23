@@ -60,7 +60,7 @@ const ShowcaseCard = ({
     <div className="w-full p-1 ">
       <div
         onClick={() => {
-          const url = `/${item.permalink}?prevscroll=${offsetY}`;
+          const url = `/experiences/${item.permalink}?prevscroll=${offsetY}`;
           console.log('URL:', url); // Print the URL
           router.push(url); // Navigate
         }}

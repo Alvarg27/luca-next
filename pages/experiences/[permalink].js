@@ -11,6 +11,7 @@ import {
 } from "react-icons/ri";
 import { FaDollarSign, FaMoneyBillWaveAlt } from "react-icons/fa";
 import FilesCarrousel from "@/components/filesCarrousel/FliesCarrousel";
+import Form from "@/components/Form/Form";
 
 const ServicePage = () => {
   const router = useRouter();
@@ -30,6 +31,7 @@ const ServicePage = () => {
     }
     setService(result);
   }, [router.query]);
+
   return (
     <div className="pt-[70px] mx-auto mb-10 relative w-full">
       <div className=" max-w-[1200px] mx-auto w-full rounded-2xl relative ">
@@ -107,6 +109,9 @@ const ServicePage = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="lg:mx-72" >
+            <Form/>
             </div>
           </div>
         </div>

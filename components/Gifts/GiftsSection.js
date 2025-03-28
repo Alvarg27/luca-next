@@ -1,37 +1,8 @@
 import React from 'react';
 import CardSlider from '../CardSlider/CardSlider';
+import gifts from '@/data/gifts'; // Adjust import path as needed
 
 const GiftsSection = () => {
-  const items = [
-    {
-      title: 'Kit de ginebra',
-      file: 'https://cdn.tectify.io/luca-web/gifts/kitginebra.webp',
-    },
-    {
-      title: 'Kit de mezcal',
-      file: '/Gifts/mezcal.webp',
-    },
-    {
-      title: 'Kit de tequila',
-      file: '/Gifts/Tequila3.webp',
-    },
-    {
-      title: 'Kit de vino',
-      file: '/Gifts/Vino.webp',
-    },
-    {
-      title: 'Kit de whiskey',
-      file: '/Gifts/IMG_5968 (2).jpg',
-    },
-    {
-      title: 'Kit de gin',
-      file: '/Gifts/gin.webp',
-    },
-    {
-      title: 'Kit de licor',
-      file: '/Gifts/licor.webp',
-    },
-  ];
   return (
     <section className="my-28 w-[90%] mx-auto max-w-[1200px]">
       <div className="text-center mb-10 px-4">
@@ -49,7 +20,7 @@ const GiftsSection = () => {
           </p>
         </div>
       </div>
-      <CardSlider items={items} />
+      <CardSlider items={gifts} />
     </section>
   );
 };

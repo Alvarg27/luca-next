@@ -28,11 +28,7 @@ const EvntCarousel = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
-            Sabemos que cada empresa es única, y así tratamos a cada
-            proyecto es por eso que nuestro equipo está comprometido a
-            brindarte un servicio excepcional desde la planificación
-            hasta la ejecución, asegurando que tu experiencia sea
-            impecable en todos los aspectos.
+          Cada empresa es única, y así tratamos cada proyecto. Nuestro equipo garantiza un servicio excepcional, desde la planificación hasta la ejecución, asegurando una experiencia impecable.
           </p>
         </div>
       </div>

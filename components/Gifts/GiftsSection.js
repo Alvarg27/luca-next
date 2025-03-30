@@ -11,12 +11,7 @@ const GiftsSection = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
-            Destaca en cualquier ocasión especial, con elegantes Kits
-            que transmiten el aprecio y la dedicación que tu empresa o
-            tu persona tiene hacia aquellos que la rodean, haz de cada
-            regalo una experiencia inolvidable personalizándolo de
-            acuerdo a la experiencia que quieras brindarle a tus
-            clientes, socios, empleados o amigos.
+          Destaca con elegantes kits personalizados que reflejen aprecio y admiración, compartiendo más que un regalo, una experiencia inolvidable para todas aquellas personas que te rodean.
           </p>
         </div>
       </div>

@@ -10,14 +10,7 @@ const PromotionalSection = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
-            Destaca y marca diferencia ante tu competencia con
-            artículos promocionales personalizados de la más alta
-            calidad. Es esencial fortalecer constantemente la
-            presencia de tu marca con clientes, socios y
-            trabajadores.; Es por eso que en Luca ofrecemos una amplia
-            gama de productos adaptados y diseñados a tus necesidades
-            para elevar el posicionamiento de tu marca y reflejar su
-            identidad única.
+          Destaca tu marca con artículos personalizados de la más alta calidad. En Luca ofrecemos productos personalizados para fortalecer la presencia identidad y posicionamiento de tu marca con clientes, socios y colaboradores.
           </p>
         </div>
       </div>

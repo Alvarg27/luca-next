@@ -13,14 +13,7 @@ const IncentivesSection = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
-            Impulsa y fortalece el rendimiento y la motivación de tu
-            equipo de trabajo con nuestras tarjetas de incentivos. Es
-            fundamental reconocer y recompensar el esfuerzo y el
-            compromiso de tus colaboradores una vez alcanzados los
-            objetivos establecidos, por lo que ofrecemos una amplia
-            variedad de incentivos como: Si Vale, Amazon, Uber,
-            UberEats, Spotify, Apple y más, puedes personalizar y
-            adaptar tus incentivos al monto que desees
+          Motiva a tu equipo reconociendo su esfuerzo con tarjetas personalizables de Si Vale, Amazon, Uber, Spotify, Apple y más, puedes personalizar y adaptar tus incentivos al monto que desees.
           </p>
         </div>
       </div>

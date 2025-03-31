@@ -55,7 +55,7 @@ const GiftPage = () => {
             </div>
           )}
           <div
-            onClick={() => router.push(`/?scroll=${router.query.prevscroll}`)}
+            onClick={() => router.push(`/Gifts`)}
             className="z-[3] h-[40px] px-2 cursor-pointer rounded-full absolute top-2 left-2 text-sm flex items-center justify-center shadow-md text-gray-500 bg-gray-200"
           >
             <RiArrowLeftLine />

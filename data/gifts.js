@@ -59,7 +59,7 @@ export const gifts = [
     },
     {
         title: 'Kit Vino Plus',
-        file: '/Gifts/Vino.webp',
+        file: '/Gifts/vinopl.jpeg',
         permalink: 'vinoplus',
         characteristics: [
             'Caja de madera con botella de vino',
@@ -98,7 +98,7 @@ export const gifts = [
     },
     {
         title: 'Kit Licor',
-        file: '',
+        file: '/Gifts/Licor.webp',
         permalink: 'licor',
         characteristics: [
             'Caja de madera con botella de Licor 43',

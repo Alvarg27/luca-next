@@ -1,5 +1,25 @@
 import React from 'react';
 import PromotionalCard from './PromotionalCard';
+import CardSliderNoText from '../CardSlider/CardSliderNoText';
+import CardSliderNoTextVertical from '../CardSliderVertical/CardSliderNoTextVertical';
+
+const items = [
+  {
+    imageUrl: '/CarrouselPromotional/foto2.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto3.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto4.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto5.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto1.jpg'
+  },
+];
 
 const PromotionalSection = () => {
   return (
@@ -15,8 +35,7 @@ const PromotionalSection = () => {
         </div>
       </div>
       <div className="flex md:flex-row flex-col md:px-24 px-4 gap-12">
-        <PromotionalCard pdf="PDF/CATALOGO ARTICULOS.pdf" src="articulosPromocionales.jpg" label="Artículos promocional Luca" />
-        <PromotionalCard pdf="PDF/CATALOGO TEXTILES LUCA.pdf" src="fotoTextiles.jpeg" label="Textiles promocional Luca" />
+        <CardSliderNoTextVertical items={items} />
       </div>
     </div>
   );

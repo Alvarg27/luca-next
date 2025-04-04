@@ -144,25 +144,27 @@ const Form = () => {
           />
         </div>
 
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="servicio"
-          >
-            ¿Qué servicio deseas
-            <span className="text-red-500">*</span>?
-          </label>
-          <input
-            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="servicio"
-            type="text"
-            name="servicio"
-            value={formData.servicio}
-            onChange={handleInputChange}
-          />
-        </div>
+        <div className="form-group">
+        <label htmlFor="servicio" className="block text-sm font-medium text-gray-700 mb-1">
+          ¿Qué servicio deseas?
+        </label>
+        <select
+          id="servicio"
+          name="servicio"
+          value={formData.servicio}
+          onChange={handleInputChange}
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+          required
+        >
+          <option value="" disabled>Selecciona un servicio</option>
+          <option value="experiences">Experiences</option>
+          <option value="event-planning">Event planning</option>
+          <option value="regalos">Regalos</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mt-10">
           <button
             className="bg-teal-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"

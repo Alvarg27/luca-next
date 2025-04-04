@@ -15,9 +15,9 @@ const DropdownProfile = () => {
             <p>Event Planning</p>
           </li>
         </Link>
-        <Link href="/Contact" passHref>
+        <Link href="/Gifts" passHref>
           <li className="mx-1 text-base hover:bg-black hover:dark:bg-teal-500  hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer">
-            <p>Promocionales</p>
+            <p>Regalos</p>
           </li>
         </Link>
       </ul>

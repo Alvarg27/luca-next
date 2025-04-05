@@ -10,6 +10,7 @@ import ShowcaseSection from '@/components/Showcase/ShowcaseSection';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import DoubleCarousel from '@/components/DoubleCarousel/DoubleCarousel';
+import Circles from '@/components/commons/Circles';
 
 export default function Home() {
   const router = useRouter();
@@ -27,6 +28,7 @@ export default function Home() {
       {/* <BusinessInformationSection /> */}
       {/* <ShowcaseSection /> */}
       <DoubleCarousel />
+      <Circles />
       <ClientsSection />
       <PromotionalSection />
       <GiftsSection />

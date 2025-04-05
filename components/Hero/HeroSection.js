@@ -5,14 +5,15 @@ import heroImage from '../../public/hero.webp';
 import Circles from '../commons/Circles';
 import { useRouter } from 'next/router';
 import Form from '../Form/Form';
+import useNavigation from "@/hooks/useNavigation";
 
 const HeroSection = () => {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
-  const { homeRef } = useRef();
   const router = useRouter();
+  const { aboutRef } = useNavigation();
   return (
     <section
-      ref={homeRef}
+      ref={aboutRef}
       className="min-h-screen w-full flex justify-center items-center relative"
     >
       <div className="max-w-[1200px] w-[90%] relative z-[1] flex md:flex-row flex-col md:mt-[0px] -mt-[60px] pt-32 md:py-24">

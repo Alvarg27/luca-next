@@ -27,7 +27,7 @@ export const NavigationProvider = ({ children }) => {
       ref: clientsRef,
       title: "Clientes",
     },
-  ];
+  ];  
   const itemsMobileNav = [
     {
       route: "/",
@@ -55,9 +55,9 @@ export const NavigationProvider = ({ children }) => {
       title: "Event Planning",
     },
     {
-      route: "/events/[eventpermalink]", // Assuming event routes are under /events
-      ref: eventRef, // Ref related to events, adjust as needed
-      title: "Event", // Title for the event link
+      route: "/Gifts", 
+      ref: eventRef, 
+      title: "Regalos", 
     },
   ]
   useEffect(() => {

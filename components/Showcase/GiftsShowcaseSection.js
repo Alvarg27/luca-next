@@ -29,7 +29,7 @@ const GiftShowcaseSection = () => {
     <section ref={servicesRef} className="w-full max-w-[1200px] mx-auto mb-10">
       <div className="text-center mb-10 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
-          REGALOS CORPORATIVOS
+          KITS CORPORATIVOS
         </h2>
         <p className="font-alga md:text-xl text-gray-600 my-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

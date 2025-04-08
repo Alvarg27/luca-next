@@ -57,7 +57,7 @@ export const NavigationProvider = ({ children }) => {
     {
       route: "/Gifts", 
       ref: eventRef, 
-      title: "Regalos", 
+      title: "Kits", 
     },
   ]
   useEffect(() => {

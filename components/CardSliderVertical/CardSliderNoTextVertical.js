@@ -85,7 +85,7 @@ const CardSliderNoTextVertical = ({ items }) => {
           onClick={() => handleDownload('PDF/CATALOGO TEXTILES LUCA.pdf', 'Catálogo_Textiles_LUCA.pdf')}
           className="flex items-center gap-2 px-6 py-3 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 transition-colors duration-300 w-full md:w-auto"
         >
-          <FaDownload /> Descargar catálogo textiles
+          <FaDownload /> Descargar catálogo prendas
         </button>
         
         <button 

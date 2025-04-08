@@ -19,7 +19,7 @@ const DropdownProfile = () => {
         </Link>
         <Link href="/Gifts" passHref>
           <li className="w-full text-base hover:bg-black hover:dark:bg-teal-500 hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer">
-            <p>Regalos</p>
+            <p>Kits</p>
           </li>
         </Link>
       </ul>

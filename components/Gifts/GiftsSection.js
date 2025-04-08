@@ -7,7 +7,7 @@ const GiftsSection = () => {
     <section className="my-28 w-[90%] mx-auto max-w-[1200px]">
       <div className="text-center mb-10 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
-          Regalos Corporativos
+          Kits Corporativos
         </h2>
         <div className="flex justify-center items-center">
           <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">

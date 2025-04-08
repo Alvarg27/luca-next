@@ -159,7 +159,7 @@ const Form = () => {
           <option value="" disabled>Selecciona un servicio</option>
           <option value="experiences">Experiences</option>
           <option value="event-planning">Event planning</option>
-          <option value="regalos">Regalos</option>
+          <option value="regalos">Promocionales</option>
           <option value="otro">Otro</option>
         </select>
       </div>

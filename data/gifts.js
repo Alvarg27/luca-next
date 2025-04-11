@@ -1,7 +1,7 @@
 export const gifts = [
     {
       title: 'Kit ejecutivo',
-      file: '/Gifts/ejecutivo.webp', //missing
+      file: '/Gifts/ejecutivo.jpg',
       permalink: 'ejecutivo',
       characteristics: [
         'Libreta con elástico',
@@ -49,7 +49,7 @@ export const gifts = [
     },
     {
         title: 'Kit Canasta Plus',
-        file: '',
+        file: '/Gifts/canasta.JPG',
         permalink: 'canasta',
         characteristics: [
             'Canasta de mimbre con 5 diferentes botellas',
@@ -140,7 +140,7 @@ export const gifts = [
     },
     {
         title: 'Kit de Café',
-        file: '',
+        file: '/Gifts/cafe.JPG',
         permalink: 'cafe',
         characteristics: [
             'Café molido',

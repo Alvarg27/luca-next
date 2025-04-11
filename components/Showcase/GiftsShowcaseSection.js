@@ -32,7 +32,7 @@ const GiftShowcaseSection = () => {
           KITS CORPORATIVOS
         </h2>
         <p className="font-alga md:text-xl text-gray-600 my-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Destaca en ocasiones especiales con Kits elegantes que expresan aprecio y dedicación, convirtiendo cada regalo en una experiencia personalizada para clientes, socios, empleados o amigos.
         </p>
       </div>
       

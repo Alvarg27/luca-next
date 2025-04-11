@@ -46,6 +46,9 @@ const Form = () => {
       return;
     }
 
+    // Debug log to check form data before sending
+    console.log("Sending form data:", formData);
+    
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID,
@@ -55,7 +58,7 @@ const Form = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Email sent successfully:", result.text);
           setErrors({});
           setIsSent(true);
           // Reset the form data after successful submission
@@ -65,13 +68,13 @@ const Form = () => {
             email: '',
             servicio: '',
           });
+          router.push(`/contacto`);
         },
         (error) => {
-          console.log(error.text);
+          console.log("Email send error:", error.text);
+          // Don't navigate away if there's an error
         }
       );
-
-    router.push(`/contacto`);
   };
 
   return (
@@ -82,7 +85,7 @@ const Form = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-gray-100 shadow-xl rounded px-12 pt-6 pb-8 mb-4 "
+        className="bg-gray-100 shadow-xl rounded px-12 pt-6 pb-8 mb-4"
       >
         {Object.keys(errors).length > 0 && (
           <div className="mb-4 text-red-500">
@@ -149,20 +152,24 @@ const Form = () => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="servicio"
           >
-            ¿Qué servicio deseas
-            <span className="text-red-500">*</span>?
+            ¿Qué servicio deseas?<span className="text-red-500">*</span>
           </label>
-          <input
-            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          <select
             id="servicio"
-            type="text"
             name="servicio"
             value={formData.servicio}
             onChange={handleInputChange}
-          />
+            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          >
+            <option value="" disabled>Selecciona un servicio</option>
+            <option value="experiences">Experiences</option>
+            <option value="event-planning">Event planning</option>
+            <option value="regalos">Promocionales</option>
+            <option value="otro">Otro</option>
+          </select>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mt-10">
           <button
             className="bg-teal-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"

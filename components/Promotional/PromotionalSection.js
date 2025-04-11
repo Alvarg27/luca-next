@@ -1,5 +1,25 @@
 import React from 'react';
 import PromotionalCard from './PromotionalCard';
+import CardSliderNoText from '../CardSlider/CardSliderNoText';
+import CardSliderNoTextVertical from '../CardSliderVertical/CardSliderNoTextVertical';
+
+const items = [
+  {
+    imageUrl: '/CarrouselPromotional/foto2.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto3.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto4.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto5.jpg',
+  },
+  {
+    imageUrl: '/CarrouselPromotional/foto1.jpg'
+  },
+];
 
 const PromotionalSection = () => {
   return (
@@ -10,20 +30,12 @@ const PromotionalSection = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
-            Destaca y marca diferencia ante tu competencia con
-            artículos promocionales personalizados de la más alta
-            calidad. Es esencial fortalecer constantemente la
-            presencia de tu marca con clientes, socios y
-            trabajadores.; Es por eso que en Luca ofrecemos una amplia
-            gama de productos adaptados y diseñados a tus necesidades
-            para elevar el posicionamiento de tu marca y reflejar su
-            identidad única.
+          Destaca tu marca con artículos personalizados de la más alta calidad. En Luca ofrecemos productos personalizados para fortalecer la presencia identidad y posicionamiento de tu marca con clientes, socios y colaboradores.
           </p>
         </div>
       </div>
       <div className="flex md:flex-row flex-col md:px-24 px-4 gap-12">
-        <PromotionalCard pdf="PDF/CATALOGO ARTICULOS.pdf" src="articulosPromocionales.jpg" label="Artículos promocional Luca" />
-        <PromotionalCard pdf="PDF/CATALOGO TEXTILES LUCA.pdf" src="fotoTextiles.jpeg" label="Textiles promocional Luca" />
+        <CardSliderNoTextVertical items={items} />
       </div>
     </div>
   );

@@ -28,11 +28,7 @@ const ExpCarousel = () => {
         </h2>
         <div className="flex justify-center items-center">
           <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
-            En LUCA, nos especializamos en generar experiencias que
-            dejen huella, adaptamos cada experiencia según tus
-            preferencias y necesidades, asegurando que cada detalle se
-            alinee perfectamente con tu marca para alcanzar tus
-            objetivos corporativos.
+          En LUCA, generamos experiencias personalizadas de acuerdo a tus necesidades, garantizando que cada detalle cumpla con los estándares y objetivos corporativos de tu marca
           </p>
         </div>
       </div>

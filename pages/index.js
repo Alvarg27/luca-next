@@ -8,12 +8,16 @@ import PromotionalSection from '@/components/Promotional/PromotionalSection';
 import QuienesSomos from '@/components/QuienesSomos/QuienesSomos';
 import ShowcaseSection from '@/components/Showcase/ShowcaseSection';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import DoubleCarousel from '@/components/DoubleCarousel/DoubleCarousel';
+import Circles from '@/components/commons/Circles';
+import Modal from '@/components/modal/modal';
 
 export default function Home() {
   const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   useEffect(() => {
+    setIsModalOpen(true);
     if (!router.query.scroll) {
       return;
     }
@@ -22,16 +26,21 @@ export default function Home() {
   }, [router]);
   return (
     <div>
-      <HeroSection />
       {/*<AboutSection />*/}
       {/*<QuienesSomos />*/}
       {/* <BusinessInformationSection /> */}
       {/* <ShowcaseSection /> */}
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
       <DoubleCarousel />
-      <IncentivesSection />
+      
+      <ClientsSection />
       <PromotionalSection />
       <GiftsSection />
-      <ClientsSection />
+      <IncentivesSection />
+      <HeroSection />
     </div>
   );
 }

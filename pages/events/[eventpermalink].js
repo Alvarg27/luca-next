@@ -11,6 +11,7 @@ import {
 } from 'react-icons/ri';
 import { FaDollarSign, FaMoneyBillWaveAlt } from 'react-icons/fa';
 import FilesCarrousel from '@/components/filesCarrousel/FliesCarrousel';
+import Form from "@/components/Form/Form";
 
 const EventPage = () => {
   const router = useRouter();
@@ -60,6 +61,9 @@ const EventPage = () => {
               <p className="font-alga text-gray-500 text-xl">
                 {event?.description}
               </p>
+              <div className="lg:mx-72 mt-24" >
+            <Form/>
+            </div>
             </div>
           </div>
         </div>

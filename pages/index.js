@@ -30,6 +30,7 @@ export default function Home() {
       {/*<QuienesSomos />*/}
       {/* <BusinessInformationSection /> */}
       {/* <ShowcaseSection /> */}
+      {/* <Circles /> */}
       <Modal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 

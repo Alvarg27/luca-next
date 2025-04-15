@@ -5,8 +5,9 @@ const eventPlanning = [
     description:
       'Disfruta de un break que estimule los sentidos con café recién hecho, pan dulce, jugos frescos y deliciosos bocadillos. Despierta la creatividad y la atención en cada pausa',
     files: [
-      '/CoffeeBreak/coffee1.webp',
-      '/CoffeeBreak/coffee2.webp',
+      '/CoffeeBreak/cafe.jpeg',
+      '/CoffeeBreak/cafe2.jpeg',
+      '/CoffeeBreak/cafe3.jpeg',
     ],
   },
   {
@@ -15,8 +16,11 @@ const eventPlanning = [
     description:
       'Deleita a tus invitados con nuestro exquisito Catering. Desde eventos íntimos hasta grandes celebraciones, nuestro equipo gastronómico personaliza cada detalle. Sabores que cautivan, con desayunos deliciosos y saludables para que tus reuniones matutinas sean más productivas, comidas para cerrar acuerdos o fortalecer relaciones laborales y cenas con una presentación impecable. Haz que tu evento sea memorable con nuestro servicio de catering que transforma cada ocasión en una experiencia culinaria única.',
     files: [
-      '/DesayunoComida/comida1.webp',
-      '/DesayunoComida/comida2.webp',
+      '/DesayunoComida/desayuno1.jpg',
+      '/DesayunoComida/desayuno2.jpg',
+      '/DesayunoComida/desayuno3.jpg',
+      '/DesayunoComida/desayuno4.jpg',
+      '/DesayunoComida/desayuno5.jpg',
     ],
   },
   {

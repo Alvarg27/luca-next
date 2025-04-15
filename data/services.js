@@ -47,8 +47,7 @@ const services = [
     cities: ["CDMX", "Monterrey", "Querétaro", "Guadalajara"],
     permalink: "cata-de-vinos",
     files: [
-      "https://cdn.tectify.io/luca-web/experiences/catavinos1.webp",
-      "https://cdn.tectify.io/luca-web/experiences/catavinos2.webp",
+      "/showcase/exp7.jpg",
     ],
   },
  /*  {
@@ -75,9 +74,11 @@ const services = [
     cities: ["CDMX"],
     permalink: "actividades-de-integracion",
     files: [
-      "https://cdn.tectify.io/luca-web/experiences/actividadesdeintegracion1.webp",
-      "https://cdn.tectify.io/luca-web/experiences/actividadesdeintegracion2.webp",
-      "https://cdn.tectify.io/luca-web/experiences/actividadesdeintegracion3.webp",
+      "/showcase/exp2.jpg",
+      "/showcase/exp4.jpg",
+      "/showcase/exp5.jpg",
+      "/showcase/exp8.jpg",
+      "/showcase/exp9.jpg",
     ],
   },
   {
@@ -90,7 +91,10 @@ const services = [
     duration: "2-5 Horas",
     cities: ["CDMX"],
     permalink: "eventos-tipo-kermes",
-    files: ["/showcase/kermes.webp"],
+    files: ["/showcase/kermes.webp",
+      "/showcase/exp1.jpg",
+
+    ],
   },
 /*   {
     title: "Comidas empresariales",
@@ -140,6 +144,7 @@ const services = [
     permalink: "go-karts",
     files: [
       "https://cdn.tectify.io/luca-web/experiences/gokarts1.webp",
+      "/showcase/exp12.jpg",
       "https://cdn.tectify.io/luca-web/experiences/gokarts2.webp",
       "https://cdn.tectify.io/luca-web/experiences/gokarts3.webp",
       "https://cdn.tectify.io/luca-web/experiences/gokarts4.webp",

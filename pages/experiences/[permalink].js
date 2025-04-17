@@ -54,7 +54,6 @@ const ServicePage = () => {
           <div className="w-full  md:px-6 flex flex-col justify-center">
             <p className="text-4xl font-monument">{service?.title}</p>
             <div className="mt-4">
-              <p className="text-2xl font-monument">Descripción</p>
               <p className="font-alga text-gray-500 text-xl">
                 {service?.description}
               </p>

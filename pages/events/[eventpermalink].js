@@ -57,7 +57,6 @@ const EventPage = () => {
           <div className="w-full  md:px-6 py-10 flex flex-col justify-center">
             <p className="text-4xl font-monument">{event?.title}</p>
             <div className="mt-4">
-              <p className="text-2xl font-monument">Descripción</p>
               <p className="font-alga text-gray-500 text-xl">
                 {event?.description}
               </p>

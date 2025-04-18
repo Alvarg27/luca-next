@@ -69,7 +69,7 @@ const services = [
       "Luca Creating Experiences ofrece programas de integración para ayudar a afinar habilidades tales como la comunicación, resolución de problemas y trabajo en equipo. Mejora la sinergia de tus grupos de trabajo con un ambiente de calidad, actividades retadoras y entretenidas.",
     price: "Medio-Alto",
     location: "Instalaciones propias o privadas (A acordar con el cliente)",
-    people: "10 adelante",
+    people: "10 en adelante",
     duration: "2-6 Horas",
     cities: ["CDMX"],
     permalink: "actividades-de-integracion",

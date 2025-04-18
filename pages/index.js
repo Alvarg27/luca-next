@@ -10,8 +10,6 @@ import ShowcaseSection from '@/components/Showcase/ShowcaseSection';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import DoubleCarousel from '@/components/DoubleCarousel/DoubleCarousel';
-import Circles from '@/components/commons/Circles';
-import Modal from '@/components/modal/Modal';
 
 export default function Home() {
   const router = useRouter();
@@ -31,17 +29,12 @@ export default function Home() {
       {/* <BusinessInformationSection /> */}
       {/* <ShowcaseSection /> */}
       {/* <Circles /> */}
-      <Modal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-      />
       <DoubleCarousel />
-      
-      <ClientsSection />
+      <HeroSection />
       <PromotionalSection />
       <GiftsSection />
       <IncentivesSection />
-      <HeroSection />
+      <ClientsSection />
     </div>
   );
 }

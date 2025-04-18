@@ -15,7 +15,7 @@ export const gifts = [
       permalink: 'gin',
       characteristics: [
         'Caja de madera con botella de gin',
-        '3 snacks de su preferencia',
+        '3 snacks a seleccionar',
         'Contiene jigger y shaker'
       ],
       options: {
@@ -28,7 +28,7 @@ export const gifts = [
       permalink: 'vino',
       characteristics: [
         'Caja de madera con botella de vino',
-        '3 snacks de su preferencia'
+        '3 snacks a seleccionar'
       ],
       options: {
         bottle: ['Maria Tinto 750 ML', '3V 750 ML', 'Finca Las Moras 750 ML']
@@ -40,7 +40,7 @@ export const gifts = [
       permalink: 'tequila',
       characteristics: [
         'Caja de madera con botella de tequila',
-        '3 snacks de su preferencia',
+        '3 snacks a seleccionar',
         '4 shots tequileros'
       ],
       options: {
@@ -76,7 +76,7 @@ export const gifts = [
         permalink: 'ginplus',
         characteristics: [
             'Caja de madera con botella de gin',
-            '3 snacks',
+            '3 snacks a seleccionar',
             'Jigger',
             'Shaker',
             'Vasitos de cristal',
@@ -89,7 +89,7 @@ export const gifts = [
         permalink: 'whisky',
         characteristics: [
             'Caja de madera con botella de whisky',
-            '3 snacks de su preferencia',
+            '3 snacks a seleccionar',
             '3 vasitos de cristal'
         ],
         options: {
@@ -102,7 +102,7 @@ export const gifts = [
         permalink: 'licor',
         characteristics: [
             'Caja de madera con botella de Licor 43',
-            '3 snacks de su preferencia',
+            '3 snacks a seleccionar',
             'Shaker',
             '2 vasitos de cristal',
             'Cold Brew'

@@ -5,19 +5,19 @@ import CardSliderNoText from '@/components/CardSlider/CardSliderNoText';
 const EvntCarousel = () => {
   const items = [
     {
-      file: '/CarrouselEventP/IMG_2802.webp',
+      file: '/CarrouselEventP/img6481.jpg',
     },
     {
-      file: '/CarrouselEventP/IMG_8068.webp',
+      file: '/CarrouselEventP/img0991.jpg',
     },
     {
-      file: '/CarrouselEventP/IMG_2971.webp',
+      file: '/CarrouselEventP/img0992.jpg',
     },
     {
-      file: '/CarrouselEventP/IMG_4103.webp',
+      file: '/CarrouselEventP/img6391.jpg',
     },
     {
-      file: '/CarrouselEventP/IMG_5285.webp',
+      file: '/CarrouselEventP/img6491.jpg',
     },
   ];
   return (

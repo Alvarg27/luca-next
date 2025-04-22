@@ -8,16 +8,16 @@ const ExpCarousel = () => {
       file: '/CarrouselExp/IMG_9510.webp',
     },
     {
-      file: '/CarrouselExp/IMG_8476.webp',
-    },
-    {
       file: '/CarrouselExp/IMG_4111.webp',
     },
     {
-      file: '/CarrouselExp/IMG_4098.webp',
+      file: '/CarrouselExp/IMG_1518.webp',
     },
     {
-      file: '/CarrouselExp/IMG_1518.webp',
+      file: 'CarrouselExp/img2371.jpg',
+    },
+    {
+      file: '/CarrouselExp/img0133.jpg',
     },
   ];
   return (

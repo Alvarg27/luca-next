@@ -12,6 +12,7 @@ const Form = () => {
     telefono: '',
     email: '',
     servicio: '',
+    empresa: '',
   });
 
   const handleInputChange = (e) => {
@@ -30,6 +31,7 @@ const Form = () => {
       'telefono',
       'email',
       'servicio',
+      'empresa',
     ];
     const newErrors = {};
 
@@ -167,6 +169,23 @@ const Form = () => {
             <option value="regalos">Promocionales</option>
             <option value="otro">Otro</option>
           </select>
+        </div>
+
+        <div className="mb-6">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="empresa"
+          >
+            Empresa<span className="text-red-500">*</span>:
+          </label>
+          <input
+            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="empresa"
+            type="text"
+            name="empresa"
+            value={formData.empresa}
+            onChange={handleInputChange}
+          />
         </div>
 
         <div className="flex items-center justify-center mt-10">

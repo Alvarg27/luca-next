@@ -21,19 +21,19 @@ const EvntCarousel = () => {
     },
   ];
   return (
-    <section className="my-20 w-[90%] mx-auto max-w-[100%] md:max-w-[45%]">
-      <div className="text-center mb-10 px-4">
+    <section className="md:my-20 mt-0 mb-6 w-[90%] mx-auto max-w-[100%] md:max-w-[45%]">
+      <div className="text-center mb-6 md:mb-10 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
           EVENT PLANNING
         </h2>
         <div className="flex justify-center items-center">
-          <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
+          <p className="font-alga md:text-xl text-gray-600 my-4 md:my-6 md:w-[900px]">
           Cada empresa es única, y así tratamos cada proyecto. Nuestro equipo garantiza un servicio excepcional, desde la planificación hasta la ejecución, asegurando una experiencia impecable.
           </p>
         </div>
       </div>
       <CardSliderNoText items={items} />
-      <div className="flex items-center justify-center p-10">
+      <div className="flex items-center justify-center p-4 md:p-10">
         <Link
           href="/EventPlanning"
           passHref

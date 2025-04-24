@@ -2,6 +2,8 @@ import React from 'react';
 import PromotionalCard from './PromotionalCard';
 import CardSliderNoText from '../CardSlider/CardSliderNoText';
 import CardSliderNoTextVertical from '../CardSliderVertical/CardSliderNoTextVertical';
+import useNavigation from "@/hooks/useNavigation";
+import { useRouter } from 'next/router';
 
 const items = [
   {
@@ -22,7 +24,12 @@ const items = [
 ];
 
 const PromotionalSection = () => {
+  const router = useRouter();
+  const { promotionalRef } = useNavigation();
+  console.log("promotionalRef.current", promotionalRef.current);
+
   return (
+    <section ref={promotionalRef} id="promotionals" >
     <div className="w-[90%] max-w-[1200px] mx-auto my-10">
       <div className="text-center mb-4 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
@@ -38,6 +45,7 @@ const PromotionalSection = () => {
         <CardSliderNoTextVertical items={items} />
       </div>
     </div>
+    </section>
   );
 };
 

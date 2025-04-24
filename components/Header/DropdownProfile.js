@@ -1,7 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const DropdownProfile = () => {
+  const router = useRouter();
+
+  const handlePromotionalsClick = (e) => {
+    e.preventDefault();
+    // Navigate to home page first if not already there
+    if (router.pathname !== '/') {
+      router.push('/').then(() => {
+        // After navigation is complete, scroll to the promotionals section
+        setTimeout(() => {
+          const element = document.getElementById('promotionals');
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 300);
+      });
+    } else {
+      // If already on home page, just scroll to the element
+      const element = document.getElementById('promotionals');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div className="flex flex-col absolute left-[-1rem] top-[3rem]">
       {/* Invisible bridge to prevent dropdown from disappearing when moving cursor */}
@@ -22,6 +47,12 @@ const DropdownProfile = () => {
             <p>Kits</p>
           </li>
         </Link>
+        <li 
+          onClick={handlePromotionalsClick} 
+          className="w-full text-base hover:bg-black hover:dark:bg-teal-500 hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer"
+        >
+          <p>Promocionales</p>
+        </li>
       </ul>
     </div>
   );

@@ -89,7 +89,7 @@ const CardSliderNoTextVertical = ({ items }) => {
         </button>
         
         <button 
-          onClick={() => handleDownload('PDF/CATALOGO ARTICULOS.pdf', 'Catálogo_Artículos_LUCA.pdf')}
+          onClick={() => handleDownload('PDF/promocionales.pdf', 'Catálogo_Artículos_LUCA.pdf')}
           className="flex items-center gap-2 px-6 py-3 bg-teal-500 text-white font-medium rounded-lg hover:bg-teal-600 transition-colors duration-300 w-full md:w-auto"
         >
           <FaDownload /> Descargar catálogo artículos

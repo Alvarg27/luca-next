@@ -21,19 +21,19 @@ const ExpCarousel = () => {
     },
   ];
   return (
-    <section className="my-20 w-[90%] mx-auto md:max-w-[45%] max-w-[100%]">
-      <div className="text-center mb-10 px-4">
+    <section className="md:my-20 my-6 w-[90%] mx-auto md:max-w-[45%] max-w-[100%]">
+      <div className="text-center mb-6 md:mb-10 px-4">
         <h2 className="font-semibold md:text-4xl text-3xl font-monument">
           EXPERIENCES
         </h2>
         <div className="flex justify-center items-center">
-          <p className="font-alga md:text-xl text-gray-600 my-6 md:w-[900px]">
+          <p className="font-alga md:text-xl text-gray-600 my-4 md:my-6 md:w-[900px]">
           En LUCA, generamos experiencias personalizadas de acuerdo a tus necesidades, garantizando que cada detalle cumpla con los estándares y objetivos corporativos de tu marca
           </p>
         </div>
       </div>
       <CardSliderNoText items={items} />
-      <div className="flex items-center justify-center p-10">
+      <div className="flex items-center justify-center p-4 md:p-10">
         <Link
           href="/Experiences"
           passHref

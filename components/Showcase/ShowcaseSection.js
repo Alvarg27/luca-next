@@ -68,16 +68,7 @@ const ShowcaseSection = () => {
           EXPERIENCES
         </h2>
         <p className="font-alga md:text-xl text-gray-600 my-6">
-          En LUCA, nos especializamos en generar experiencias que
-          dejen huella, adaptamos cada experiencia según tus
-          preferencias y necesidades, asegurando que cada detalle se
-          alinee perfectamente con tu marca para alcanzar tus
-          objetivos corporativos. Ya sea fortalecer la cultura
-          empresarial, motivar mejorar la colaboración en tus equipos
-          de trabajo mediante el team building o aumentar la
-          satisfacción y confianza de tus clientes, trabajamos contigo
-          para lograr resultados tangibles e impulsar el crecimiento y
-          éxito de tu empresa.
+        En LUCA, generamos experiencias personalizadas de acuerdo a tus necesidades, garantizando que cada detalle cumpla con los estándares y objetivos corporativos de tu marca
         </p>
       </div>
       <div className="flex w-full">

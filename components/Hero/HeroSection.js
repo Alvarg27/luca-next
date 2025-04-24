@@ -16,8 +16,8 @@ const HeroSection = () => {
       ref={aboutRef}
       className="min-h-screen w-full flex justify-center items-center relative"
     >
-      <div className="max-w-[1200px] w-[90%] relative z-[1] flex md:flex-row flex-col md:mt-[0px] -mt-[60px] pt-32 md:py-24">
-        <div className="w-full md:w-3/4 lg:pr-4 flex items-center md:h-[700px] h-[550px] justify-center">
+      <div className="max-w-[1200px] w-[90%] relative z-[1] flex md:flex-row flex-col md:mt-0 mt-0 pt-12 md:pt-24">
+        <div className="w-full md:w-3/4 lg:pr-4 flex items-center md:h-[700px] h-auto justify-center">
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
             <h2 className="text-3xl lg:text-3xl xl:text-5xl font-medium font-monument">
               Transformamos eventos en{' '}

@@ -80,18 +80,7 @@ const EventPlanning = () => {
           </h2>
         </div>
         <p className="font-alga md:text-xl text-gray-600 my-6 md:px-10 py-10">
-          Sabemos que cada empresa es única, y así tratamos a cada
-          proyecto es por eso que nuestro equipo está comprometido a
-          brindarte un servicio excepcional desde la planificación
-          hasta la ejecución, asegurando que tu experiencia sea
-          impecable en todos los aspectos. Somos una agencia
-          integradora de servicios, dedicada a solucionar, crear,
-          planear y coordinar desde pequeñas reuniones como coffee
-          breaks o desayunos hasta grandes eventos como lo son
-          ponencias/conferencias o grandes eventos sociales, adaptamos
-          nuestras soluciones para satisfacer tus necesidades
-          específicas. Deja tu evento en nuestras manos coordinaremos
-          todos los detalles
+        Cada empresa es única, y así tratamos cada proyecto. Nuestro equipo garantiza un servicio excepcional, desde la planificación hasta la ejecución, asegurando una experiencia impecable.
         </p>
       </div>
       <div className="flex w-full pb-24">

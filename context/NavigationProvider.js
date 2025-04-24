@@ -10,6 +10,7 @@ export const NavigationProvider = ({ children }) => {
   const servicesRef = useRef();
   const eventRef = useRef();
   const experiencesRef = useRef();
+  const promotionalRef = useRef();
   const { width } = useWindowDimensions();
   const items = [
     {
@@ -59,6 +60,11 @@ export const NavigationProvider = ({ children }) => {
       ref: eventRef, 
       title: "Kits", 
     },
+    {
+      route: "/",
+      ref: promotionalRef,
+      title: "Promocionales",
+    },
   ]
   useEffect(() => {
     if (width > 1024) {
@@ -73,6 +79,7 @@ export const NavigationProvider = ({ children }) => {
         clientsRef,
         servicesRef,
         eventRef,
+        promotionalRef,
         items,
         dropdownIsOpen,
         setDropdownIsOpen,

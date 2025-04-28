@@ -7,10 +7,8 @@ const DropdownProfile = () => {
 
   const handlePromotionalsClick = (e) => {
     e.preventDefault();
-    // Navigate to home page first if not already there
     if (router.pathname !== '/') {
       router.push('/').then(() => {
-        // After navigation is complete, scroll to the promotionals section
         setTimeout(() => {
           const element = document.getElementById('promotionals');
           if (element) {
@@ -19,7 +17,6 @@ const DropdownProfile = () => {
         }, 300);
       });
     } else {
-      // If already on home page, just scroll to the element
       const element = document.getElementById('promotionals');
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -32,26 +29,35 @@ const DropdownProfile = () => {
       {/* Invisible bridge to prevent dropdown from disappearing when moving cursor */}
       <div className="h-[0.8rem] w-full" />
       <ul className="flex flex-col items-center justify-center min-w-[160px]">
-        <Link href="/Experiences" passHref>
-          <li className="w-full text-base hover:bg-black hover:dark:bg-teal-500 hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer">
-            <p>Experiences</p>
-          </li>
-        </Link>
-        <Link href="/EventPlanning" passHref>
-          <li className="w-full text-base hover:bg-black hover:dark:bg-teal-500 hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer">
-            <p>Event Planning</p>
-          </li>
-        </Link>
-        <Link href="/Gifts" passHref>
-          <li className="w-full text-base hover:bg-black hover:dark:bg-teal-500 hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer">
-            <p>Kits</p>
-          </li>
-        </Link>
-        <li 
-          onClick={handlePromotionalsClick} 
-          className="w-full text-base hover:bg-black hover:dark:bg-teal-500 hover:bg-opacity-10 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer"
+        <li className="w-full">
+          <Link
+            href="/Experiences"
+            className="block w-full text-base hover:bg-teal-500 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer"
+          >
+            Experiences
+          </Link>
+        </li>
+        <li className="w-full">
+          <Link
+            href="/EventPlanning"
+            className="block w-full text-base hover:bg-teal-500 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer"
+          >
+            Event Planning
+          </Link>
+        </li>
+        <li className="w-full">
+          <Link
+            href="/Gifts"
+            className="block w-full text-base hover:bg-teal-500 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer"
+          >
+            Kits
+          </Link>
+        </li>
+        <li
+          onClick={handlePromotionalsClick}
+          className="w-full text-base hover:bg-teal-500 px-4 flex items-center justify-center h-[50px] rounded-lg cursor-pointer"
         >
-          <p>Promocionales</p>
+          Promocionales
         </li>
       </ul>
     </div>
